@@ -552,7 +552,7 @@
     .footer-main {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
       padding-bottom: 48px;
     }
     .footer-logo-img {
@@ -578,6 +578,7 @@
       grid-template-columns: repeat(4, auto);
       gap: 24px 32px;
       align-items: center;
+      margin: 0 auto;
     }
     .footer-network-badge:nth-child(4n+1) { margin-right: 32px; }
     .footer-network-badge:nth-child(4n+3) { margin-left: 32px; }
@@ -592,19 +593,19 @@
     .footer-network-badge:hover { opacity: 1; }
     .footer-network-badge img,
     .footer-network-badge svg {
-      height: 52px;
+      height: 74px;
       width: auto;
       display: block;
       filter: invert(1) brightness(1.2);
     }
     .footer-bottom {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 24px;
+      gap: 8px;
       padding: 20px 0;
       border-top: 1px solid var(--border);
-      flex-wrap: wrap;
     }
     .footer-bottom p { font-size: 12px; color: var(--text-muted); }
     .footer-legal {
@@ -650,7 +651,7 @@
   <nav id="nav" role="navigation" aria-label="Hauptnavigation">
     <!-- Logo -->
     <a href="#" class="nav-logo" aria-label="Mairhofer Advokatur – Startseite">
-      <img src="../assets/images/MAIRHOFER ADVOKATUR.png" alt="Mairhofer Advokatur" class="nav-logo-img" />
+      <img src="../assets/images/logo/MAIRHOFER ADVOKATUR.png" alt="Mairhofer Advokatur" class="nav-logo-img" />
     </a>
 
     <!-- Right cluster -->
@@ -712,22 +713,22 @@
       <div class="about-grid">
         <div class="about-text">
           <div class="about-image">
-            <img src="../assets/images/Gemini_Generated_Image_ukt25kukt25kukt2.png" alt="Mairhofer Advokatur — Liechtenstein" loading="lazy" />
+            <img src="../assets/images/about/Gemini_Generated_Image_ukt25kukt25kukt2.png" alt="Mairhofer Advokatur — Liechtenstein" loading="lazy" />
           </div>
           <h2 class="section-heading" id="about-heading">
-            The right lawyer<br />listens first.
+            Der richtige Anwalt<br />hört zuerst zu.
           </h2>
           <p>
-            Clients rarely arrive with a structured mandate. They arrive with a problem — one that is often urgent, rarely simple, and deeply personal.
+            Mandanten kommen selten mit einem klar strukturierten Auftrag. Sie kommen mit einem Problem — eines, das oft dringend, selten einfach und immer persönlich ist.
           </p>
           <p>
-            The right lawyer isn't always the most prominent one. It's the one who listens first, understands the full picture, and then acts with precision.
+            Der richtige Anwalt ist nicht immer der bekannteste. Es ist derjenige, der zuerst zuhört, das gesamte Bild versteht und dann mit Präzision handelt.
           </p>
           <p>
-            That precision comes from work that rarely shows. The research, the case law, the statutory commentary — building the picture piece by piece until the right argument becomes clear.
+            Diese Präzision entsteht durch Arbeit, die selten sichtbar ist. Die Recherche, die Rechtsprechung, die gesetzlichen Kommentare — Stück für Stück wird das Bild aufgebaut, bis das richtige Argument klar wird.
           </p>
           <p>
-            At Mairhofer Advokatur, that is where we begin. Every matter starts with understanding what is actually at stake — for you, not just on paper.
+            Bei Mairhofer Advokatur beginnen wir genau dort. Jedes Mandat startet mit dem Verständnis dessen, was wirklich auf dem Spiel steht — für Sie, nicht nur auf dem Papier.
           </p>
         </div>
       </div>
@@ -747,7 +748,7 @@
         <!-- Card 1: Private Clients und Non-Profits -->
         <a class="practice-card" href="private-clients.html">
           <div class="practice-card-icon" aria-hidden="true">
-            <img src="../assets/images/private-clients.webp" alt="Private Clients & Non-Profits">
+            <img src="../assets/images/rechtsgebiete/private-clients.webp" alt="Private Clients & Non-Profits">
           </div>
           <h3>Private Clients &amp; Non-Profits</h3>
         </a>
@@ -755,7 +756,7 @@
         <!-- Card 2: Digital Business -->
         <a class="practice-card" href="digital-business.html">
           <div class="practice-card-icon" aria-hidden="true">
-            <img src="../assets/images/digital-business.webp" alt="Digital Business">
+            <img src="../assets/images/rechtsgebiete/digital-business.webp" alt="Digital Business">
           </div>
           <h3>Digital Business</h3>
         </a>
@@ -763,7 +764,7 @@
         <!-- Card 3: Bank-, Versicherungs- und Finanzmarktrecht -->
         <a class="practice-card" href="finanzmarktrecht.html">
           <div class="practice-card-icon" aria-hidden="true">
-            <img src="../assets/images/finanzmarktrecht.webp" alt="Bank-, Versicherungs- und Finanzmarktrecht">
+            <img src="../assets/images/rechtsgebiete/finanzmarktrecht.webp" alt="Bank-, Versicherungs- und Finanzmarktrecht">
           </div>
           <h3>Bank-, Versicherungs- und Finanzmarktrecht</h3>
         </a>
@@ -771,7 +772,7 @@
         <!-- Card 4: Gesellschafts- und Handelsrecht -->
         <a class="practice-card" href="gesellschaftsrecht.html">
           <div class="practice-card-icon" aria-hidden="true">
-            <img src="../assets/images/corporate.webp" alt="Gesellschafts- und Handelsrecht">
+            <img src="../assets/images/rechtsgebiete/corporate.webp" alt="Gesellschafts- und Handelsrecht">
           </div>
           <h3>Gesellschafts- und Handelsrecht</h3>
         </a>
@@ -779,7 +780,7 @@
         <!-- Card 5: Immobilien- und Baurecht -->
         <a class="practice-card" href="immobilienrecht.html">
           <div class="practice-card-icon" aria-hidden="true">
-            <img src="../assets/images/immobilienrecht.webp" alt="Immobilien- und Baurecht">
+            <img src="../assets/images/rechtsgebiete/immobilienrecht.webp" alt="Immobilien- und Baurecht">
           </div>
           <h3>Immobilien- und Baurecht</h3>
         </a>
@@ -787,7 +788,7 @@
         <!-- Card 6: Streitbeilegung und Prozessführung -->
         <a class="practice-card" href="streitbeilegung.html">
           <div class="practice-card-icon" aria-hidden="true">
-            <img src="../assets/images/lady-justice.webp" alt="Streitbeilegung und Prozessführung">
+            <img src="../assets/images/rechtsgebiete/lady-justice.webp" alt="Streitbeilegung und Prozessführung">
           </div>
           <h3>Streitbeilegung und Prozessführung</h3>
         </a>
@@ -809,7 +810,7 @@
         <!-- Partner card: Remo Mairhofer -->
         <div class="partner-card">
           <div class="partner-card-photo">
-            <img src="../assets/images/advokatur-remo.webp" alt="Remo Mairhofer">
+            <img src="../assets/images/team/advokatur-remo.webp" alt="Remo Mairhofer">
           </div>
           <div class="partner-card-name">Remo Mairhofer</div>
           <div class="partner-card-title">
@@ -821,7 +822,7 @@
         <!-- Partner card: Tomasz Klimek -->
         <div class="partner-card">
           <div class="partner-card-photo">
-            <img src="../assets/images/advokatur-tomasz.webp" alt="Tomasz Klimek">
+            <img src="../assets/images/team/advokatur-tomasz.webp" alt="Tomasz Klimek">
           </div>
           <div class="partner-card-name">Tomasz Klimek</div>
           <div class="partner-card-title">
@@ -915,7 +916,7 @@
 
         <!-- Office 1: Schaan -->
         <div class="office-card">
-          <img class="office-card-img" src="../assets/images/Office schaan vier zu drei.webp" alt="Büro Schaan" loading="lazy" />
+          <img class="office-card-img" src="../assets/images/offices/Office schaan vier zu drei.webp" alt="Büro Schaan" loading="lazy" />
           <div class="office-card-city">Büro Schaan</div>
           <div class="office-card-detail">
             Im Bretscha 7<br />
@@ -928,7 +929,7 @@
 
         <!-- Office 2: Wien -->
         <div class="office-card">
-          <img class="office-card-img" src="../assets/images/Office Vienna.webp" alt="Büro Wien" loading="lazy" />
+          <img class="office-card-img" src="../assets/images/offices/Office Vienna.webp" alt="Büro Wien" loading="lazy" />
           <div class="office-card-city">Büro Wien</div>
           <div class="office-card-detail">
             Mahlerstraße 13/1B<br />
@@ -941,7 +942,7 @@
 
         <!-- Office 3: Kraków -->
         <div class="office-card">
-          <img class="office-card-img" src="../assets/images/Office Krakow.webp" alt="Büro Kraków" loading="lazy" />
+          <img class="office-card-img" src="../assets/images/offices/Office Krakow.webp" alt="Büro Kraków" loading="lazy" />
           <div class="office-card-city">Büro Krakau</div>
           <div class="office-card-detail">
             ul. Kielecka 19<br />
@@ -966,40 +967,37 @@
       <div class="footer-main">
 
         <!-- Logo -->
-        <img src="../assets/images/MAIRHOFER ADVOKATUR.png" alt="Mairhofer Advokatur" class="footer-logo-img" />
+        <img src="../assets/images/logo/MAIRHOFER ADVOKATUR.png" alt="Mairhofer Advokatur" class="footer-logo-img" />
 
         <!-- Law network memberships -->
         <div class="footer-networks">
           <a href="https://www.rak.li/" target="_blank" rel="noopener" aria-label="Liechtensteinische Rechtsanwaltskammer" class="footer-network-badge">
-            <img src="../assets/images/logo_rak-fl.svg" alt="Liechtensteinische Rechtsanwaltskammer" />
+            <img src="../assets/images/memberships/logo_rak-fl.svg" alt="Liechtensteinische Rechtsanwaltskammer" />
           </a>
           <a href="https://rakwien.at/" target="_blank" rel="noopener" aria-label="Rechtsanwaltskammer Wien" class="footer-network-badge">
-            <img src="../assets/images/logo_rak-at.svg" alt="Rechtsanwaltskammer Wien" />
+            <img src="../assets/images/memberships/logo_rak-at.svg" alt="Rechtsanwaltskammer Wien" />
           </a>
           <a href="https://www.notariatskammer.li/index.php/de/" target="_blank" rel="noopener" aria-label="Notariatskammer Liechtenstein" class="footer-network-badge">
-            <img src="../assets/images/logo_notariatskammer-fl.svg" alt="Notariatskammer Liechtenstein" />
+            <img src="../assets/images/memberships/logo_notariatskammer-fl.svg" alt="Notariatskammer Liechtenstein" />
           </a>
           <a href="https://www.ifa-fl.li/" target="_blank" rel="noopener" aria-label="IFA Liechtenstein" class="footer-network-badge">
-            <img src="../assets/images/logo_fiscal-association-fl.svg" alt="IFA Liechtenstein" />
+            <img src="../assets/images/memberships/logo_fiscal-association-fl.svg" alt="IFA Liechtenstein" />
           </a>
           <a href="https://oirp.krakow.pl/" target="_blank" rel="noopener" aria-label="Okręgowa Izba Radców Prawnych Kraków" class="footer-network-badge">
-            <img src="../assets/images/logo_bezirkskammer-krakau.svg" alt="Okręgowa Izba Radców Prawnych Kraków" />
+            <img src="../assets/images/memberships/logo_bezirkskammer-krakau.svg" alt="Okręgowa Izba Radców Prawnych Kraków" />
           </a>
           <a href="https://www.cii.co.uk/" target="_blank" rel="noopener" aria-label="Chartered Insurance Institute" class="footer-network-badge">
-            <img src="../assets/images/logo_chartered-insurance-institute.svg" alt="Chartered Insurance Institute" />
+            <img src="../assets/images/memberships/logo_chartered-insurance-institute.svg" alt="Chartered Insurance Institute" />
           </a>
           <a href="https://www.techlondonadvocates.org.uk/" target="_blank" rel="noopener" aria-label="Tech London Advocates" class="footer-network-badge">
-            <img src="../assets/images/logo_tech-london-advocates.svg" alt="Tech London Advocates" />
+            <img src="../assets/images/memberships/logo_tech-london-advocates.svg" alt="Tech London Advocates" />
           </a>
           <a href="https://lfnglobal.com/" target="_blank" rel="noopener" aria-label="The Law Network" class="footer-network-badge">
-            <img src="../assets/images/logo_the-law-network.svg" alt="The Law Network" />
+            <img src="../assets/images/memberships/logo_the-law-network.svg" alt="The Law Network" />
           </a>
         </div>
 
-        <!-- Mitgliedschaften label -->
-        <div class="footer-memberships">
-          <span class="footer-memberships-label">Mitgliedschaften</span>
-        </div>
+
 
       </div>
 
