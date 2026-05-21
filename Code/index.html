@@ -88,9 +88,10 @@
       align-items: center;
       gap: 10px;
       flex-shrink: 0;
+      align-self: stretch;
     }
     .nav-logo-img {
-      height: 40px;
+      height: 60px;
       width: auto;
       display: block;
     }
@@ -505,119 +506,130 @@
     .contact-offices {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 2px;
+      gap: 32px;
       margin-top: 64px;
     }
     .office-card {
-      background: var(--bg-card);
-      overflow: hidden;
+      display: flex;
+      flex-direction: column;
     }
     .office-card-img {
       width: 100%;
-      aspect-ratio: 16 / 9;
+      aspect-ratio: 4 / 3;
       object-fit: cover;
-      opacity: 0.7;
-      filter: brightness(0.75) grayscale(0.2);
-    }
-    .office-card-body {
-      padding: 32px 28px;
+      border-radius: 12px;
+      display: block;
+      margin-bottom: 20px;
+      background: var(--bg-card);
     }
     .office-card-city {
-      font-family: var(--font-serif);
-      font-size: 20px;
-      font-weight: 400;
-      color: var(--text);
-      margin-bottom: 16px;
+      font-family: var(--font-sans);
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: 10px;
     }
     .office-card-detail {
       font-size: 14px;
+      color: var(--text);
+      line-height: 2;
+    }
+    .office-card-detail .muted {
       color: var(--text-muted);
-      line-height: 1.9;
     }
     .office-card-detail a {
-      color: var(--accent);
+      color: var(--text-muted);
       transition: color 0.2s;
     }
     .office-card-detail a:hover { color: var(--text); }
 
     /* ─── Footer ─────────────────────────────────────────────────── */
     #footer {
-      position: relative;
       background: var(--bg);
-      padding: 64px 0 40px;
+      padding: 56px 0 0;
       border-top: 1px solid var(--border);
     }
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.5fr repeat(3, 1fr);
-      gap: 48px;
-      margin-bottom: 56px;
+    .footer-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 48px;
     }
-    .footer-brand .nav-logo-text {
-      font-size: 16px;
+    .footer-logo-img {
+      height: 48px;
+      width: auto;
       display: block;
-      margin-bottom: 12px;
     }
-    .footer-brand p {
-      font-size: 13px;
-      color: var(--text-muted);
-      line-height: 1.7;
+    .footer-memberships {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 16px;
     }
-    .footer-col h4 {
-      font-size: 11px;
+    .footer-memberships-label {
+      font-size: 10px;
       font-weight: 500;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--text-muted);
-      margin-bottom: 16px;
     }
-    .footer-col ul { list-style: none; }
-    .footer-col ul li { margin-bottom: 8px; }
-    .footer-col ul a {
-      font-size: 13px;
-      color: var(--text-muted);
-      transition: color 0.2s;
-    }
-    .footer-col ul a:hover { color: var(--text); }
-    .footer-memberships {
-      display: flex;
+    .footer-networks {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      gap: 24px 32px;
       align-items: center;
-      gap: 24px;
-      margin-bottom: 40px;
-      padding-bottom: 32px;
-      border-bottom: 1px solid var(--border);
     }
-    .footer-membership-badge {
-      height: 36px;
-      opacity: 0.45;
-      filter: grayscale(1);
+    .footer-network-badge:nth-child(4n+1) { margin-right: 32px; }
+    .footer-network-badge:nth-child(4n+3) { margin-left: 32px; }
+    .footer-network-badge:nth-child(4n)   { margin-left: 32px; }
+    .footer-network-badge {
+      display: block;
+      color: var(--text-muted);
+      opacity: 0.8;
       transition: opacity 0.2s;
+      text-decoration: none;
     }
-    .footer-membership-badge:hover { opacity: 0.7; }
+    .footer-network-badge:hover { opacity: 1; }
+    .footer-network-badge img,
+    .footer-network-badge svg {
+      height: 52px;
+      width: auto;
+      display: block;
+      filter: invert(1) brightness(1.2);
+    }
     .footer-bottom {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       gap: 24px;
+      padding: 20px 0;
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap;
     }
     .footer-bottom p { font-size: 12px; color: var(--text-muted); }
     .footer-legal {
       display: flex;
-      gap: 20px;
+      gap: 4px;
+      align-items: center;
     }
     .footer-legal a {
       font-size: 12px;
       color: var(--text-muted);
       transition: color 0.2s;
+      padding: 0 8px;
     }
     .footer-legal a:hover { color: var(--text); }
+    .footer-legal span {
+      color: var(--border);
+      font-size: 12px;
+    }
 
     /* ─── Responsive ─────────────────────────────────────────────── */
     @media (max-width: 1024px) {
       .container { padding: 0 32px; }
       .practice-grid { grid-template-columns: repeat(2, 1fr); }
       .contact-offices { grid-template-columns: 1fr; max-width: 480px; }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-main { flex-wrap: wrap; gap: 32px; }
     }
     @media (max-width: 768px) {
       .container { padding: 0 24px; }
@@ -625,8 +637,8 @@
       .about-image { float: none; width: 100%; margin: 0 0 32px 0; }
       .practice-grid { grid-template-columns: 1fr; }
       .partners-grid { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: 1fr; }
-      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .footer-networks { flex-wrap: wrap; gap: 16px; }
+      .footer-bottom { flex-direction: column; align-items: center; }
     }
   </style>
 </head>
@@ -638,7 +650,7 @@
   <nav id="nav" role="navigation" aria-label="Hauptnavigation">
     <!-- Logo -->
     <a href="#" class="nav-logo" aria-label="Mairhofer Advokatur – Startseite">
-      <img src="assets/images/logo.png" alt="Mairhofer Advokatur" class="nav-logo-img" />
+      <img src="../assets/images/MAIRHOFER ADVOKATUR.png" alt="Mairhofer Advokatur" class="nav-logo-img" />
     </a>
 
     <!-- Right cluster -->
@@ -700,7 +712,7 @@
       <div class="about-grid">
         <div class="about-text">
           <div class="about-image">
-            <img src="assets/images/about.png" alt="Mairhofer Advokatur — Liechtenstein" loading="lazy" />
+            <img src="../assets/images/Gemini_Generated_Image_ukt25kukt25kukt2.png" alt="Mairhofer Advokatur — Liechtenstein" loading="lazy" />
           </div>
           <h2 class="section-heading" id="about-heading">
             The right lawyer<br />listens first.
@@ -835,52 +847,55 @@
         <!-- FAQ item 1 -->
         <div class="faq-item" role="listitem">
           <button class="faq-question" aria-expanded="false">
-            <span class="faq-question-text">
-              [Question 1 — written as a real client question]
-            </span>
+            <span class="faq-question-text">Ab wann lohnt es sich überhaupt, einen Anwalt einzuschalten?</span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
           <div class="faq-answer" hidden>
-            <p>[Answer — substantive prose, not bullet points.]</p>
+            <p>Am besten, bevor der Schaden da ist. Viele Probleme lassen sich durch ein kurzes Gespräch frühzeitig abfangen, noch bevor ein echter Streit oder finanzielle Nachteile entstehen. Zu langes Warten macht die Sache meistens nicht einfacher, sondern am Ende nur komplizierter und teurer für Sie. Wir sagen Ihnen nach einem ersten Blick, ob wir eingreifen sollten oder ob sich das Problem anders lösen lässt.</p>
           </div>
         </div>
 
         <!-- FAQ item 2 -->
         <div class="faq-item" role="listitem">
           <button class="faq-question" aria-expanded="false">
-            <span class="faq-question-text">
-              [Question 2]
-            </span>
+            <span class="faq-question-text">Was passiert beim ersten Gespräch — und was soll ich mitbringen?</span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
           <div class="faq-answer" hidden>
-            <p>[Answer.]</p>
+            <p>Das Erstgespräch dient dazu, Ihre Situation zu verstehen, nicht zu bewerten. Bringen Sie alles mit, was relevant erscheint: Verträge, Korrespondenz, Bescheide, Fristen. Je vollständiger das Bild, desto klarer können wir einschätzen, was möglich ist — und was nicht.</p>
           </div>
         </div>
 
         <!-- FAQ item 3 -->
         <div class="faq-item" role="listitem">
           <button class="faq-question" aria-expanded="false">
-            <span class="faq-question-text">
-              [Question 3]
-            </span>
+            <span class="faq-question-text">Wie setzen sich Ihre Honorare zusammen und wann erhalte ich die erste Kosteneinschätzung?</span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
           <div class="faq-answer" hidden>
-            <p>[Answer.]</p>
+            <p>Absolute Transparenz ist das Fundament unserer Zusammenarbeit. Nach Sichtung und Analyse Ihrer Unterlagen erhalten Sie von uns eine fundierte Aufwandsschätzung. Wir definieren die Abrechnungsbasis gemeinsam und schriftlich, bevor wir das erste Dokument für Sie aufsetzen. So wissen Sie von Anfang an exakt, woran Sie sind.</p>
           </div>
         </div>
 
         <!-- FAQ item 4 -->
         <div class="faq-item" role="listitem">
           <button class="faq-question" aria-expanded="false">
-            <span class="faq-question-text">
-              [Question 4]
-            </span>
+            <span class="faq-question-text">Habe ich während des laufenden Mandats die volle finanzielle Kontrolle und Transparenz?</span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
           <div class="faq-answer" hidden>
-            <p>[Answer.]</p>
+            <p>Ja, zu jedem Zeitpunkt. Wir arbeiten mit transparenten Zwischenabrechnungen und detaillierten Leistungsnachweisen. Sollte sich die Dynamik Ihres Verfahrens verändern oder ein unvorhersehbarer Mehraufwand entstehen, legen wir Ihnen die strategischen Optionen und die damit verbundenen Kosten offen, bevor diese entstehen. Überraschungen auf der Schlussrechnung gibt es bei uns nicht.</p>
+          </div>
+        </div>
+
+        <!-- FAQ item 5 -->
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">Ich habe Recht — warum muss ich das noch beweisen?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>Recht zu haben und Recht zu bekommen sind zwei verschiedene Dinge. Das Rechtssystem bewertet Sachverhalte auf Basis von Beweisen, Fristen und Verfahrensregeln. Unsere Aufgabe ist es, Ihre Position so stark wie möglich zu machen — innerhalb dieser Spielregeln.</p>
           </div>
         </div>
 
@@ -898,22 +913,44 @@
 
       <div class="contact-offices">
 
-        <!-- Office: Schaan / Liechtenstein -->
+        <!-- Office 1: Schaan -->
         <div class="office-card">
-          <img class="office-card-img" src="assets/images/office-schaan.jpg"
-               alt="Büro Schaan" loading="lazy" />
-          <div class="office-card-body">
-            <div class="office-card-city">Schaan</div>
-            <div class="office-card-detail">
-              [Straße und Hausnummer]<br />
-              9494 Schaan, Liechtenstein<br /><br />
-              <a href="tel:[TELEFON]">[Telefonnummer]</a><br />
-              <a href="mailto:[EMAIL]">[E-Mail-Adresse]</a>
-            </div>
+          <img class="office-card-img" src="../assets/images/Office schaan vier zu drei.webp" alt="Büro Schaan" loading="lazy" />
+          <div class="office-card-city">Büro Schaan</div>
+          <div class="office-card-detail">
+            Im Bretscha 7<br />
+            FL-9494 Schaan<br />
+            Fürstentum Liechtenstein<br />
+            Telefon +423 340 11 20<br />
+            <a href="mailto:office@mairhofer-advokatur.li">office@mairhofer-advokatur.li</a>
           </div>
         </div>
 
-        <!-- Additional office cards (e.g. Vienna) — add when needed -->
+        <!-- Office 2: Wien -->
+        <div class="office-card">
+          <img class="office-card-img" src="../assets/images/Office Vienna.webp" alt="Büro Wien" loading="lazy" />
+          <div class="office-card-city">Büro Wien</div>
+          <div class="office-card-detail">
+            Mahlerstraße 13/1B<br />
+            A-1010 Wien<br />
+            Österreich<br />
+            Telefon +43 1 904 31 34<br />
+            <a href="mailto:office@tomaszklimek.com">office@tomaszklimek.com</a>
+          </div>
+        </div>
+
+        <!-- Office 3: Kraków -->
+        <div class="office-card">
+          <img class="office-card-img" src="../assets/images/Office Krakow.webp" alt="Büro Kraków" loading="lazy" />
+          <div class="office-card-city">Büro Krakau</div>
+          <div class="office-card-detail">
+            ul. Kielecka 19<br />
+            PL-31-523 Kraków<br />
+            Polen<br />
+            Telefon +48 600 786 706<br />
+            <a href="mailto:office@tomaszklimek.com">office@tomaszklimek.com</a>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -926,60 +963,55 @@
   <footer id="footer" role="contentinfo">
     <div class="container">
 
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="assets/images/logo.png" alt="Mairhofer Advokatur" class="footer-logo-img" />
-          <p>
-            Rechtsanwaltskanzlei in Liechtenstein.<br />
-            [Tagline — optional, 1 short sentence]
-          </p>
+      <div class="footer-main">
+
+        <!-- Logo -->
+        <img src="../assets/images/MAIRHOFER ADVOKATUR.png" alt="Mairhofer Advokatur" class="footer-logo-img" />
+
+        <!-- Law network memberships -->
+        <div class="footer-networks">
+          <a href="#" target="_blank" rel="noopener" aria-label="Liechtensteinische Rechtsanwaltskammer" class="footer-network-badge">
+            <img src="../assets/images/logo_rak-fl.svg" alt="Liechtensteinische Rechtsanwaltskammer" />
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Rechtsanwaltskammer Österreich" class="footer-network-badge">
+            <img src="../assets/images/logo_rak-at.svg" alt="Rechtsanwaltskammer Österreich" />
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Notariatskammer Liechtenstein" class="footer-network-badge">
+            <img src="../assets/images/logo_notariatskammer-fl.svg" alt="Notariatskammer Liechtenstein" />
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Fiscal Association Liechtenstein" class="footer-network-badge">
+            <img src="../assets/images/logo_fiscal-association-fl.svg" alt="Fiscal Association Liechtenstein" />
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Bezirkskammer Krakau" class="footer-network-badge">
+            <img src="../assets/images/logo_bezirkskammer-krakau.svg" alt="Bezirkskammer Krakau" />
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Chartered Insurance Institute" class="footer-network-badge">
+            <img src="../assets/images/logo_chartered-insurance-institute.svg" alt="Chartered Insurance Institute" />
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Tech London Advocates" class="footer-network-badge">
+            <img src="../assets/images/logo_tech-london-advocates.svg" alt="Tech London Advocates" />
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="The Law Network" class="footer-network-badge">
+            <img src="../assets/images/logo_the-law-network.svg" alt="The Law Network" />
+          </a>
         </div>
 
-        <div class="footer-col">
-          <h4>Leistungen</h4>
-          <ul>
-            <li><a href="private-clients.html">Private Clients &amp; Non-Profits</a></li>
-            <li><a href="digital-business.html">Digital Business</a></li>
-            <li><a href="finanzmarktrecht.html">Bank- &amp; Finanzmarktrecht</a></li>
-            <li><a href="gesellschaftsrecht.html">Gesellschafts- &amp; Handelsrecht</a></li>
-            <li><a href="immobilienrecht.html">Immobilien- &amp; Baurecht</a></li>
-            <li><a href="streitbeilegung.html">Streitbeilegung</a></li>
-          </ul>
+        <!-- Mitgliedschaften label -->
+        <div class="footer-memberships">
+          <span class="footer-memberships-label">Mitgliedschaften</span>
         </div>
 
-        <div class="footer-col">
-          <h4>Kanzlei</h4>
-          <ul>
-            <li><a href="#who-we-are">Über uns</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Rechtliches</h4>
-          <ul>
-            <li><a href="imprint.html">Impressum</a></li>
-            <li><a href="data-protection.html">Datenschutz</a></li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-          </ul>
-        </div>
       </div>
 
-      <!-- Membership / association logos -->
-      <div class="footer-memberships" aria-label="Mitgliedschaften">
-        <!-- Replace with actual logo image files -->
-        <img class="footer-membership-badge" src="assets/images/badge-bar.svg"
-             alt="Rechtsanwaltskammer Liechtenstein" />
-        <!-- Add further badges here -->
-      </div>
-
+      <!-- Bottom bar -->
       <div class="footer-bottom">
         <p>&copy; <span id="year"></span> Mairhofer Advokatur. Alle Rechte vorbehalten.</p>
         <nav class="footer-legal" aria-label="Rechtliche Links">
-          <a href="imprint.html">Impressum</a>
+          <a href="sitemap.html">Sitemap</a>
+          <span>·</span>
           <a href="data-protection.html">Datenschutz</a>
+          <span>·</span>
+          <a href="imprint.html">Impressum</a>
         </nav>
       </div>
 
