@@ -126,6 +126,17 @@
     .footer-legal a { font-size:12px; color:var(--text-muted); padding:0 8px; transition:color 0.2s; }
     .footer-legal a:hover { color:var(--text); }
     .footer-legal span { color:var(--border); font-size:12px; }
+
+    /* Leistungen sub-menu */
+    .nav-submenu-wrap { display:flex; flex-direction:column; }
+    .nav-submenu-toggle { background:none; border:none; cursor:pointer; color:var(--text-muted); font-family:var(--font-sans); font-size:13px; font-weight:400; letter-spacing:0.04em; padding:11px 20px; text-align:left; display:flex; justify-content:space-between; align-items:center; width:100%; transition:color 0.15s,background 0.15s; }
+    .nav-submenu-toggle:hover { color:var(--text); background:rgba(255,255,255,0.04); }
+    .nav-submenu-toggle .submenu-arrow { width:0; height:0; border-left:4px solid transparent; border-right:4px solid transparent; border-top:5px solid currentColor; transition:transform 0.25s; flex-shrink:0; margin-left:8px; }
+    .nav-submenu-toggle.open .submenu-arrow { transform:rotate(180deg); }
+    .nav-submenu { max-height:0; overflow:hidden; transition:max-height 0.35s ease; }
+    .nav-submenu.open { max-height:400px; }
+    .nav-submenu a { font-family:var(--font-sans); font-size:12px; color:var(--text-muted); padding:8px 20px 8px 30px; display:block; transition:color 0.15s,background 0.15s; }
+    .nav-submenu a:hover { color:var(--text); background:rgba(255,255,255,0.04); }
   </style>
 </head>
 <body>
@@ -152,7 +163,17 @@
       <div class="nav-dropdown" id="nav-dropdown" role="navigation">
         <div class="nav-dropdown-inner">
           <a href="index.html#who-we-are" data-close-menu data-i18n="nav.about">Über uns</a>
-          <a href="index.html#what-we-do" data-close-menu data-i18n="nav.services">Leistungen</a>
+          <div class="nav-submenu-wrap">
+            <button class="nav-submenu-toggle" data-i18n="nav.services">Leistungen<span class="submenu-arrow"></span></button>
+            <div class="nav-submenu">
+              <a href="private-clients.html">Private Clients &amp; Non-Profits</a>
+              <a href="digital-business.html">Digital Business</a>
+              <a href="finanzmarktrecht.html">Bank-, Versicherungs- und Finanzmarktrecht</a>
+              <a href="gesellschaftsrecht.html">Gesellschafts- und Handelsrecht</a>
+              <a href="immobilienrecht.html">Immobilien- und Baurecht</a>
+              <a href="streitbeilegung.html">Streitbeilegung und Prozessführung</a>
+            </div>
+          </div>
           <a href="index.html#our-partners" data-close-menu data-i18n="nav.team">Team</a>
           <a href="index.html#faq" data-close-menu data-i18n="nav.faq">FAQ</a>
           <a href="index.html#contact" data-close-menu data-i18n="nav.contact">Kontakt</a>
@@ -245,6 +266,16 @@
     document.addEventListener('click', (e) => {
       if (!menuBtn.contains(e.target) && !menuPanel.contains(e.target)) { menuPanel.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); }
     });
+
+    const submenuToggle = document.querySelector('.nav-submenu-toggle');
+    const submenu = document.querySelector('.nav-submenu');
+    if (submenuToggle && submenu) {
+      submenuToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        submenuToggle.classList.toggle('open');
+        submenu.classList.toggle('open');
+      });
+    }
   </script>
   <script src="../assets/js/i18n.js"></script>
 
