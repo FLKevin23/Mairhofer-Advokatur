@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impressum — Mairhofer Advokatur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:#0e1014; --bg-card:#14171c; --text:#ede9e3; --text-muted:#9a9590;
+      --accent:#c9a96e; --brand:#3aafe0; --border:rgba(255,255,255,0.07);
+      --max-w:1180px; --font-serif:'Cormorant Garamond',Georgia,serif; --font-sans:'Inter',system-ui,sans-serif;
+    }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body { background:var(--bg); color:var(--text); font-family:var(--font-sans); font-weight:300; line-height:1.75; -webkit-font-smoothing:antialiased; }
+    a { color:inherit; text-decoration:none; }
+    img { display:block; max-width:100%; }
+
+    /* Nav */
+    #nav { position:fixed; top:0; left:0; right:0; z-index:100; padding:0 48px; height:72px; display:flex; align-items:center; justify-content:space-between; background:rgba(14,16,20,0.96); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); }
+    .nav-logo { display:flex; align-items:center; align-self:stretch; }
+    .nav-logo-img { height:60px; width:auto; display:block; }
+    .nav-right { display:flex; align-items:center; gap:24px; position:relative; }
+    .nav-menu-btn { background:var(--brand); border:none; border-radius:6px; cursor:pointer; font-family:var(--font-sans); font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:#fff; padding:8px 20px; display:flex; align-items:center; gap:9px; transition:background 0.2s; }
+    .nav-menu-btn:hover { background:#2d96c8; }
+    .nav-menu-btn .menu-arrow { width:0; height:0; border-left:4px solid transparent; border-right:4px solid transparent; border-top:5px solid #fff; transition:transform 0.3s; flex-shrink:0; }
+    .nav-menu-btn[aria-expanded="true"] .menu-arrow { transform:rotate(180deg); }
+    .nav-dropdown { position:absolute; top:calc(100% + 10px); right:0; z-index:98; width:220px; background:#1a1d23; border:1px solid var(--border); border-radius:8px; overflow:hidden; opacity:0; transform:translateY(-6px); pointer-events:none; transition:opacity 0.25s ease,transform 0.25s ease; }
+    .nav-dropdown.open { opacity:1; transform:translateY(0); pointer-events:auto; }
+    .nav-dropdown-inner { padding:8px 0; display:flex; flex-direction:column; }
+    .nav-dropdown a { font-family:var(--font-sans); font-size:13px; color:var(--text-muted); padding:11px 20px; transition:color 0.15s,background 0.15s; display:block; }
+    .nav-dropdown a:hover { color:var(--text); background:rgba(255,255,255,0.04); }
+    .lang-switcher { display:flex; align-items:center; gap:6px; }
+    .lang-switcher button { background:none; border:none; cursor:pointer; color:var(--text-muted); font-family:var(--font-sans); font-size:12px; letter-spacing:0.08em; padding:2px 4px; transition:color 0.2s; }
+    .lang-switcher button.active { color:var(--text); }
+    .lang-switcher button:hover { color:var(--text); }
+    .lang-divider { color:var(--border); font-size:10px; }
+    .nav-submenu-wrap { display:flex; flex-direction:column; }
+    .nav-submenu-toggle { background:none; border:none; cursor:pointer; color:var(--text-muted); font-family:var(--font-sans); font-size:13px; font-weight:400; letter-spacing:0.04em; padding:11px 20px; text-align:left; display:flex; justify-content:flex-start; align-items:center; gap:7px; width:100%; transition:color 0.15s,background 0.15s; }
+    .nav-submenu-toggle:hover { color:var(--text); background:rgba(255,255,255,0.04); }
+    .nav-submenu-toggle .submenu-arrow { width:0; height:0; border-left:4px solid transparent; border-right:4px solid transparent; border-top:5px solid var(--text); transition:transform 0.25s; flex-shrink:0; }
+    .nav-submenu-toggle.open .submenu-arrow { transform:rotate(180deg); }
+    .nav-submenu { max-height:0; overflow:hidden; transition:max-height 0.35s ease; }
+    .nav-submenu.open { max-height:400px; }
+    .nav-submenu a { font-family:var(--font-sans); font-size:12px; color:var(--text-muted); padding:8px 20px 8px 30px; display:block; transition:color 0.15s,background 0.15s; }
+    .nav-submenu a:hover { color:var(--text); background:rgba(255,255,255,0.04); }
+
+    /* Page header */
+    .page-header { padding:140px 48px 80px; text-align:center; border-bottom:1px solid var(--border); }
+    .page-header h1 { font-family:var(--font-serif); font-size:clamp(40px,6vw,72px); font-weight:300; color:var(--text); }
+
+    /* Legal content */
+    .legal-body { max-width:780px; margin:0 auto; padding:80px 48px 120px; }
+    .legal-section { margin-bottom:56px; }
+    .legal-section-title { font-family:var(--font-serif); font-size:24px; font-weight:400; color:var(--text); margin-bottom:24px; padding-bottom:12px; border-bottom:1px solid var(--border); }
+    .legal-body p { font-size:15px; line-height:1.85; color:var(--text-muted); margin-bottom:16px; }
+    .legal-body p:last-child { margin-bottom:0; }
+    .legal-body a { color:var(--accent); text-decoration:underline; text-underline-offset:3px; }
+    .legal-body a:hover { opacity:0.8; }
+    .legal-contact { font-size:15px; color:var(--text-muted); line-height:2; margin-bottom:0; }
+
+    /* Back link */
+    .back-link { display:inline-flex; align-items:center; gap:8px; font-size:13px; letter-spacing:0.05em; color:var(--text-muted); transition:color 0.2s; }
+    .back-link:hover { color:var(--text); }
+
+    /* Footer */
+    #footer { background:var(--bg); padding:56px 0 0; border-top:1px solid var(--border); }
+    .container { width:100%; max-width:var(--max-w); margin:0 auto; padding:0 48px; }
+    .footer-logo-img { height:48px; width:auto; display:block; }
+    .footer-main { display:flex; align-items:center; justify-content:flex-start; padding-bottom:48px; }
+    .footer-networks { display:grid; grid-template-columns:repeat(4,auto); gap:24px 32px; align-items:center; margin:0 auto; }
+    .footer-network-badge:nth-child(4n+1) { margin-right:32px; }
+    .footer-network-badge:nth-child(4n+3) { margin-left:32px; }
+    .footer-network-badge:nth-child(4n) { margin-left:32px; }
+    .footer-network-badge { display:block; color:var(--text-muted); opacity:0.8; transition:opacity 0.2s; text-decoration:none; }
+    .footer-network-badge:hover { opacity:1; }
+    .footer-network-badge img { height:74px; width:auto; display:block; filter:invert(1) brightness(1.2); }
+    .footer-bottom { display:flex; flex-direction:column; justify-content:center; align-items:center; gap:8px; padding:20px 0; border-top:1px solid var(--border); }
+    .footer-bottom p { font-size:12px; color:var(--text-muted); }
+    .footer-legal { display:flex; gap:4px; align-items:center; }
+    .footer-legal a { font-size:12px; color:var(--text-muted); padding:0 8px; transition:color 0.2s; }
+    .footer-legal a:hover { color:var(--text); }
+    .footer-legal span { color:var(--border); font-size:12px; }
+  </style>
+</head>
+<body>
+
+  <nav id="nav" role="navigation">
+    <a href="index.html" class="nav-logo" aria-label="Mairhofer Advokatur">
+      <img src="../assets/images/logo/MAIRHOFER ADVOKATUR.png" alt="Mairhofer Advokatur" class="nav-logo-img" />
+    </a>
+    <div class="nav-right">
+      <div class="lang-switcher" role="group" aria-label="Sprache">
+        <button class="active" data-lang="de" aria-pressed="true">DE</button>
+        <span class="lang-divider" aria-hidden="true">|</span>
+        <button data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="nav-menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-dropdown">
+        Menu <span class="menu-arrow" aria-hidden="true"></span>
+      </button>
+      <div class="nav-dropdown" id="nav-dropdown" role="navigation">
+        <div class="nav-dropdown-inner">
+          <a href="index.html#who-we-are" data-close-menu data-i18n="nav.about">Über uns</a>
+          <div class="nav-submenu-wrap">
+            <button class="nav-submenu-toggle"><span data-i18n="nav.services">Leistungen</span><span class="submenu-arrow"></span></button>
+            <div class="nav-submenu">
+              <a href="private-clients.html">Private Clients &amp; Non-Profits</a>
+              <a href="digital-business.html">Digital Business</a>
+              <a href="finanzmarktrecht.html">Bank-, Versicherungs- und Finanzmarktrecht</a>
+              <a href="gesellschaftsrecht.html">Gesellschafts- und Handelsrecht</a>
+              <a href="immobilienrecht.html">Immobilien- und Baurecht</a>
+              <a href="streitbeilegung.html">Streitbeilegung und Prozessführung</a>
+            </div>
+          </div>
+          <a href="index.html#our-partners" data-close-menu data-i18n="nav.team">Team</a>
+          <a href="index.html#faq" data-close-menu data-i18n="nav.faq">FAQ</a>
+          <a href="index.html#contact" data-close-menu data-i18n="nav.contact">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <h1>Impressum</h1>
+  </header>
+
+  <main>
+    <div class="legal-body">
+
+      <div class="legal-section">
+        <h2 class="legal-section-title">Verantwortlich für den Inhalt</h2>
+        <p class="legal-contact">
+          Mairhofer Advokatur<br />
+          Im Bretscha 7<br />
+          FL-9494 Schaan<br />
+          Telefon +423 340 11 20<br />
+          <a href="mailto:remo.mairhofer@m-advokatur.li">remo.mairhofer@m-advokatur.li</a>
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h2 class="legal-section-title">Art. 5 ECG</h2>
+        <p>Die Disziplinargewalt über die Rechtsanwälte wird vom Fürstlichen Obergericht ausgeübt.</p>
+        <p>Remo Mairhofer ist Mitglied der Liechtensteinischen Rechtsanwaltskammer (RAK) und untersteht insbesondere folgenden Gesetzen und Richtlinien: Gesetz über die Rechtsanwälte; Rechtsanwaltstarifgesetz; Rechtsanwaltstarifverordnung; Standesrichtlinien und Honorarrichtlinien der RAK.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2 class="legal-section-title">Konzept, Gestaltung und Umsetzung</h2>
+        <p>Walser Grafik Est.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2 class="legal-section-title">Inhalt des Onlineangebotes</h2>
+        <p>Der Autor übernimmt keinerlei Gewähr für die Aktualität, Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen. Haftungsansprüche gegen den Autor, welche sich auf Schäden materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens des Autors kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt. Alle Angebote sind freibleibend und unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2 class="legal-section-title">Verweise und Links</h2>
+        <p>Bei direkten oder indirekten Verweisen auf fremde Webseiten («Hyperlinks»), die ausserhalb des Verantwortungsbereiches des Autors liegen, würde eine Haftungsverpflichtung ausschliesslich in dem Fall in Kraft treten, in dem der Autor von den Inhalten Kenntnis hat und es ihm technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern. Der Autor erklärt hiermit ausdrücklich, dass zum Zeitpunkt der Linksetzung keine illegalen Inhalte auf den zu verlinkenden Seiten erkennbar waren. Auf die aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der verlinkten/verknüpften Seiten hat der Autor keinerlei Einfluss. Deshalb distanziert er sich hiermit ausdrücklich von allen Inhalten aller verlinkten /verknüpften Seiten, die nach der Linksetzung verändert wurden. Diese Feststellung gilt für alle innerhalb des eigenen Internetangebotes gesetzten Links und Verweise sowie für Fremdeinträge in vom Autor eingerichteten Gästebüchern, Diskussionsforen, Linkverzeichnissen, Mailinglisten und in allen anderen Formen von Datenbanken, auf deren Inhalt externe Schreibzugriffe möglich sind. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargebotener Informationen entstehen, haftet allein der Anbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2 class="legal-section-title">Urheber- und Kennzeichenrecht</h2>
+        <p>Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Bilder, Grafiken, Tondokumente, Videosequenzen und Texte zu beachten, von ihm selbst erstellte Bilder, Grafiken, Tondokumente, Videosequenzen und Texte zu nutzen oder auf lizenzfreie Grafiken, Tondokumente, Videosequenzen und Texte zurückzugreifen. Alle innerhalb des Internetangebotes genannten und ggf. durch Dritte geschützten Marken- und Warenzeichen unterliegen uneingeschränkt den Bestimmungen des jeweils gültigen Kennzeichenrechts und den Besitzrechten der jeweiligen eingetragenen Eigentümer. Allein aufgrund der blossen Nennung ist nicht der Schluss zu ziehen, dass Markenzeichen nicht durch Rechte Dritter geschützt sind! Das Copyright für veröffentlichte, vom Autor selbst erstellte Objekte bleibt allein beim Autor der Seiten. Eine Vervielfältigung oder Verwendung solcher Grafiken, Tondokumente, Videosequenzen und Texte in anderen elektronischen oder gedruckten Publikationen ist ohne ausdrückliche Zustimmung des Autors nicht gestattet.</p>
+      </div>
+
+      <a href="index.html" class="back-link">← Zurück zur Startseite</a>
+
+    </div>
+  </main>
+
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-main">
+        <img src="../assets/images/logo/MAIRHOFER ADVOKATUR.png" alt="Mairhofer Advokatur" class="footer-logo-img" />
+        <div class="footer-networks">
+          <a href="https://www.rak.li/" target="_blank" rel="noopener" class="footer-network-badge"><img src="../assets/images/memberships/logo_rak-fl.svg" alt="RAK Liechtenstein" /></a>
+          <a href="https://rakwien.at/" target="_blank" rel="noopener" class="footer-network-badge"><img src="../assets/images/memberships/logo_rak-at.svg" alt="RAK Wien" /></a>
+          <a href="https://www.notariatskammer.li/index.php/de/" target="_blank" rel="noopener" class="footer-network-badge"><img src="../assets/images/memberships/logo_notariatskammer-fl.svg" alt="Notariatskammer FL" /></a>
+          <a href="https://www.ifa-fl.li/" target="_blank" rel="noopener" class="footer-network-badge"><img src="../assets/images/memberships/logo_fiscal-association-fl.svg" alt="IFA Liechtenstein" /></a>
+          <a href="https://oirp.krakow.pl/" target="_blank" rel="noopener" class="footer-network-badge"><img src="../assets/images/memberships/logo_bezirkskammer-krakau.svg" alt="OIRP Kraków" /></a>
+          <a href="https://www.cii.co.uk/" target="_blank" rel="noopener" class="footer-network-badge"><img src="../assets/images/memberships/logo_chartered-insurance-institute.svg" alt="CII" /></a>
+          <a href="https://www.techlondonadvocates.org.uk/" target="_blank" rel="noopener" class="footer-network-badge"><img src="../assets/images/memberships/logo_tech-london-advocates.svg" alt="Tech London Advocates" /></a>
+          <a href="https://lfnglobal.com/" target="_blank" rel="noopener" class="footer-network-badge"><img src="../assets/images/memberships/logo_the-law-network.svg" alt="The Law Network" /></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Mairhofer Advokatur. Alle Rechte vorbehalten.</p>
+        <nav class="footer-legal" aria-label="Rechtliche Links">
+          <a href="sitemap.html">Sitemap</a><span>·</span>
+          <a href="data-protection.html">Datenschutz</a><span>·</span>
+          <a href="imprint.html">Impressum</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const menuBtn = document.getElementById('menu-btn');
+    const menuPanel = document.getElementById('nav-dropdown');
+    menuBtn.addEventListener('click', () => {
+      const isOpen = menuPanel.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', isOpen);
+    });
+    document.querySelectorAll('[data-close-menu]').forEach(link => {
+      link.addEventListener('click', () => { menuPanel.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); });
+    });
+    document.addEventListener('click', (e) => {
+      if (!menuBtn.contains(e.target) && !menuPanel.contains(e.target)) { menuPanel.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); }
+    });
+    const submenuToggle = document.querySelector('.nav-submenu-toggle');
+    const submenu = document.querySelector('.nav-submenu');
+    if (submenuToggle && submenu) {
+      submenuToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        submenuToggle.classList.toggle('open');
+        submenu.classList.toggle('open');
+      });
+    }
+  </script>
+  <script src="../assets/js/i18n.js"></script>
+
+</body>
+</html>
