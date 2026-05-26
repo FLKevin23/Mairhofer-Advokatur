@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://flkevin23.github.io/Mairhofer-Advokatur/sitemap.xml
