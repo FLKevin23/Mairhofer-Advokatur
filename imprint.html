@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sitemap — Mairhofer Advokatur</title>
+  <title>Impressum — Mairhofer Advokatur</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -52,19 +52,15 @@
     .page-header { padding:140px 48px 80px; text-align:center; border-bottom:1px solid var(--border); }
     .page-header h1 { font-family:var(--font-serif); font-size:clamp(40px,6vw,72px); font-weight:300; color:var(--text); }
 
-    /* Sitemap content */
-    .sitemap-body { max-width:780px; margin:0 auto; padding:80px 48px 120px; }
-    .sitemap-group { margin-bottom:56px; }
-    .sitemap-group-title {
-      font-size:11px; letter-spacing:0.15em; text-transform:uppercase;
-      color:var(--accent); margin-bottom:20px;
-    }
-    .sitemap-group ul { list-style:none; display:flex; flex-direction:column; gap:4px; }
-    .sitemap-group ul a {
-      font-size:16px; color:var(--text-muted); display:inline-block;
-      padding:4px 0; transition:color 0.2s;
-    }
-    .sitemap-group ul a:hover { color:var(--text); }
+    /* Legal content */
+    .legal-body { max-width:780px; margin:0 auto; padding:80px 48px 120px; }
+    .legal-section { margin-bottom:56px; }
+    .legal-section-title { font-family:var(--font-serif); font-size:24px; font-weight:400; color:var(--text); margin-bottom:24px; padding-bottom:12px; border-bottom:1px solid var(--border); }
+    .legal-body p { font-size:15px; line-height:1.85; color:var(--text-muted); margin-bottom:16px; }
+    .legal-body p:last-child { margin-bottom:0; }
+    .legal-body a { color:var(--accent); text-decoration:underline; text-underline-offset:3px; }
+    .legal-body a:hover { opacity:0.8; }
+    .legal-contact { font-size:15px; color:var(--text-muted); line-height:2; margin-bottom:0; }
 
     /* Back link */
     .back-link { display:inline-flex; align-items:center; gap:8px; font-size:13px; letter-spacing:0.05em; color:var(--text-muted); transition:color 0.2s; }
@@ -94,7 +90,7 @@
 
   <nav id="nav" role="navigation">
     <a href="index.html" class="nav-logo" aria-label="Mairhofer Advokatur">
-      <img src="../assets/images/logo/MAIRHOFER ADVOKATUR.png" alt="Mairhofer Advokatur" class="nav-logo-img" />
+      <img src="assets/images/logo/MAIRHOFER ADVOKATUR.png" alt="Mairhofer Advokatur" class="nav-logo-img" />
     </a>
     <div class="nav-right">
       <div class="lang-switcher" role="group" aria-label="Sprache">
@@ -128,47 +124,42 @@
   </nav>
 
   <header class="page-header">
-    <h1>Sitemap</h1>
+    <h1>Impressum</h1>
   </header>
 
   <main>
-    <div class="sitemap-body">
+    <div class="legal-body">
 
-      <div class="sitemap-group">
-        <p class="sitemap-group-title">Startseite</p>
-        <ul>
-          <li><a href="index.html">Mairhofer Advokatur</a></li>
-        </ul>
+      <div class="legal-section">
+        <h2 class="legal-section-title">Verantwortlich für den Inhalt</h2>
+        <p class="legal-contact">
+          Mairhofer Advokatur<br />
+          Im Bretscha 7<br />
+          FL-9494 Schaan<br />
+          Telefon +423 340 11 20<br />
+          <a href="mailto:remo.mairhofer@m-advokatur.li">remo.mairhofer@m-advokatur.li</a>
+        </p>
       </div>
 
-      <div class="sitemap-group">
-        <p class="sitemap-group-title">Rechtsgebiete</p>
-        <ul>
-          <li><a href="private-clients.html">Private Clients &amp; Non-Profits</a></li>
-          <li><a href="digital-business.html">Digital Business</a></li>
-          <li><a href="finanzmarktrecht.html">Bank-, Versicherungs- und Finanzmarktrecht</a></li>
-          <li><a href="gesellschaftsrecht.html">Gesellschafts- und Handelsrecht</a></li>
-          <li><a href="immobilienrecht.html">Immobilien- und Baurecht</a></li>
-          <li><a href="streitbeilegung.html">Streitbeilegung und Prozessführung</a></li>
-        </ul>
+      <div class="legal-section">
+        <h2 class="legal-section-title">Art. 5 ECG</h2>
+        <p>Die Disziplinargewalt über die Rechtsanwälte wird vom Fürstlichen Obergericht ausgeübt.</p>
+        <p>Remo Mairhofer ist Mitglied der Liechtensteinischen Rechtsanwaltskammer (RAK) und untersteht insbesondere folgenden Gesetzen und Richtlinien: Gesetz über die Rechtsanwälte; Rechtsanwaltstarifgesetz; Rechtsanwaltstarifverordnung; Standesrichtlinien und Honorarrichtlinien der RAK.</p>
       </div>
 
-      <div class="sitemap-group">
-        <p class="sitemap-group-title">Kanzlei</p>
-        <ul>
-          <li><a href="index.html#who-we-are">Über uns</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="index.html#faq">FAQ</a></li>
-          <li><a href="index.html#contact">Kontakt</a></li>
-        </ul>
+      <div class="legal-section">
+        <h2 class="legal-section-title">Inhalt des Onlineangebotes</h2>
+        <p>Der Autor übernimmt keinerlei Gewähr für die Aktualität, Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen. Haftungsansprüche gegen den Autor, welche sich auf Schäden materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens des Autors kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt. Alle Angebote sind freibleibend und unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.</p>
       </div>
 
-      <div class="sitemap-group">
-        <p class="sitemap-group-title">Rechtliches</p>
-        <ul>
-          <li><a href="data-protection.html">Datenschutz</a></li>
-          <li><a href="imprint.html">Impressum</a></li>
-        </ul>
+      <div class="legal-section">
+        <h2 class="legal-section-title">Verweise und Links</h2>
+        <p>Bei direkten oder indirekten Verweisen auf fremde Webseiten («Hyperlinks»), die ausserhalb des Verantwortungsbereiches des Autors liegen, würde eine Haftungsverpflichtung ausschliesslich in dem Fall in Kraft treten, in dem der Autor von den Inhalten Kenntnis hat und es ihm technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern. Der Autor erklärt hiermit ausdrücklich, dass zum Zeitpunkt der Linksetzung keine illegalen Inhalte auf den zu verlinkenden Seiten erkennbar waren. Auf die aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der verlinkten/verknüpften Seiten hat der Autor keinerlei Einfluss. Deshalb distanziert er sich hiermit ausdrücklich von allen Inhalten aller verlinkten /verknüpften Seiten, die nach der Linksetzung verändert wurden. Diese Feststellung gilt für alle innerhalb des eigenen Internetangebotes gesetzten Links und Verweise sowie für Fremdeinträge in vom Autor eingerichteten Gästebüchern, Diskussionsforen, Linkverzeichnissen, Mailinglisten und in allen anderen Formen von Datenbanken, auf deren Inhalt externe Schreibzugriffe möglich sind. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargebotener Informationen entstehen, haftet allein der Anbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2 class="legal-section-title">Urheber- und Kennzeichenrecht</h2>
+        <p>Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Bilder, Grafiken, Tondokumente, Videosequenzen und Texte zu beachten, von ihm selbst erstellte Bilder, Grafiken, Tondokumente, Videosequenzen und Texte zu nutzen oder auf lizenzfreie Grafiken, Tondokumente, Videosequenzen und Texte zurückzugreifen. Alle innerhalb des Internetangebotes genannten und ggf. durch Dritte geschützten Marken- und Warenzeichen unterliegen uneingeschränkt den Bestimmungen des jeweils gültigen Kennzeichenrechts und den Besitzrechten der jeweiligen eingetragenen Eigentümer. Allein aufgrund der blossen Nennung ist nicht der Schluss zu ziehen, dass Markenzeichen nicht durch Rechte Dritter geschützt sind! Das Copyright für veröffentlichte, vom Autor selbst erstellte Objekte bleibt allein beim Autor der Seiten. Eine Vervielfältigung oder Verwendung solcher Grafiken, Tondokumente, Videosequenzen und Texte in anderen elektronischen oder gedruckten Publikationen ist ohne ausdrückliche Zustimmung des Autors nicht gestattet.</p>
       </div>
 
       <a href="index.html" class="back-link">← Zurück zur Startseite</a>
@@ -179,16 +170,16 @@
   <footer id="footer" role="contentinfo">
     <div class="container">
       <div class="footer-main">
-        <img src="../assets/images/logo/MAIRHOFER ADVOKATUR.png" alt="Mairhofer Advokatur" class="footer-logo-img" />
+        <img src="assets/images/logo/MAIRHOFER ADVOKATUR.png" alt="Mairhofer Advokatur" class="footer-logo-img" />
         <div class="footer-networks">
-          <a href="https://www.rak.li/" target="_blank" rel="noopener" class="footer-network-badge"><img src="../assets/images/memberships/logo_rak-fl.svg" alt="RAK Liechtenstein" /></a>
-          <a href="https://rakwien.at/" target="_blank" rel="noopener" class="footer-network-badge"><img src="../assets/images/memberships/logo_rak-at.svg" alt="RAK Wien" /></a>
-          <a href="https://www.notariatskammer.li/index.php/de/" target="_blank" rel="noopener" class="footer-network-badge"><img src="../assets/images/memberships/logo_notariatskammer-fl.svg" alt="Notariatskammer FL" /></a>
-          <a href="https://www.ifa-fl.li/" target="_blank" rel="noopener" class="footer-network-badge"><img src="../assets/images/memberships/logo_fiscal-association-fl.svg" alt="IFA Liechtenstein" /></a>
-          <a href="https://oirp.krakow.pl/" target="_blank" rel="noopener" class="footer-network-badge"><img src="../assets/images/memberships/logo_bezirkskammer-krakau.svg" alt="OIRP Kraków" /></a>
-          <a href="https://www.cii.co.uk/" target="_blank" rel="noopener" class="footer-network-badge"><img src="../assets/images/memberships/logo_chartered-insurance-institute.svg" alt="CII" /></a>
-          <a href="https://www.techlondonadvocates.org.uk/" target="_blank" rel="noopener" class="footer-network-badge"><img src="../assets/images/memberships/logo_tech-london-advocates.svg" alt="Tech London Advocates" /></a>
-          <a href="https://lfnglobal.com/" target="_blank" rel="noopener" class="footer-network-badge"><img src="../assets/images/memberships/logo_the-law-network.svg" alt="The Law Network" /></a>
+          <a href="https://www.rak.li/" target="_blank" rel="noopener" class="footer-network-badge"><img src="assets/images/memberships/logo_rak-fl.svg" alt="RAK Liechtenstein" /></a>
+          <a href="https://rakwien.at/" target="_blank" rel="noopener" class="footer-network-badge"><img src="assets/images/memberships/logo_rak-at.svg" alt="RAK Wien" /></a>
+          <a href="https://www.notariatskammer.li/index.php/de/" target="_blank" rel="noopener" class="footer-network-badge"><img src="assets/images/memberships/logo_notariatskammer-fl.svg" alt="Notariatskammer FL" /></a>
+          <a href="https://www.ifa-fl.li/" target="_blank" rel="noopener" class="footer-network-badge"><img src="assets/images/memberships/logo_fiscal-association-fl.svg" alt="IFA Liechtenstein" /></a>
+          <a href="https://oirp.krakow.pl/" target="_blank" rel="noopener" class="footer-network-badge"><img src="assets/images/memberships/logo_bezirkskammer-krakau.svg" alt="OIRP Kraków" /></a>
+          <a href="https://www.cii.co.uk/" target="_blank" rel="noopener" class="footer-network-badge"><img src="assets/images/memberships/logo_chartered-insurance-institute.svg" alt="CII" /></a>
+          <a href="https://www.techlondonadvocates.org.uk/" target="_blank" rel="noopener" class="footer-network-badge"><img src="assets/images/memberships/logo_tech-london-advocates.svg" alt="Tech London Advocates" /></a>
+          <a href="https://lfnglobal.com/" target="_blank" rel="noopener" class="footer-network-badge"><img src="assets/images/memberships/logo_the-law-network.svg" alt="The Law Network" /></a>
         </div>
       </div>
       <div class="footer-bottom">
@@ -226,7 +217,7 @@
       });
     }
   </script>
-  <script src="../assets/js/i18n.js"></script>
+  <script src="assets/js/i18n.js"></script>
 
 </body>
 </html>
