@@ -8,7 +8,7 @@ const translations = {
     'nav.contact':  'Kontakt',
 
     // Hero
-    'hero.heading': 'Rechtssicherheit,<br />die <em>Bestand hat.</em>',
+    'hero.heading': 'Persönlich, engagiert, <em>innovativ.</em>',
 
     // About
     'about.heading': 'Der richtige Anwalt<br />hört zuerst zu.',
@@ -70,7 +70,7 @@ const translations = {
     'nav.contact':  'Contact',
 
     // Hero
-    'hero.heading': 'Legal certainty<br />that <em>endures.</em>',
+    'hero.heading': 'Personal, committed, <em>innovative.</em>',
 
     // About
     'about.heading': 'The right lawyer<br />listens first.',
