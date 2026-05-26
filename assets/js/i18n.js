@@ -13,7 +13,7 @@ const translations = {
     // About
     'about.heading': 'Der richtige Anwalt<br />hört zuerst zu.',
     'about.p1': 'Mandanten kommen selten mit einem klar strukturierten Auftrag. Sie kommen mit einem Problem — eines, das oft dringend, selten einfach und immer persönlich ist.',
-    'about.p2': 'Der richtige Anwalt ist nicht immer der bekannteste. Es ist derjenige, der zuerst zuhört, das gesamte Bild versteht und dann mit Präzision handelt.',
+    'about.p2': 'Grösse und Bekanntheit allein machen noch keine gute Anwaltskanzlei aus. Es ist der Anwalt, der zuerst zuhört, das gesamte Bild versteht und dann mit Präzision handelt.',
     'about.p3': 'Diese Präzision entsteht durch Arbeit, die selten sichtbar ist. Die Recherche, die Rechtsprechung, die gesetzlichen Kommentare — Stück für Stück wird das Bild aufgebaut, bis das richtige Argument klar wird.',
     'about.p4': 'Bei Mairhofer Advokatur beginnen wir genau dort. Jedes Mandat startet mit dem Verständnis dessen, was wirklich auf dem Spiel steht — für Sie, nicht nur auf dem Papier.',
 
@@ -75,7 +75,7 @@ const translations = {
     // About
     'about.heading': 'The right lawyer<br />listens first.',
     'about.p1': 'Clients rarely arrive with a structured mandate. They arrive with a problem — one that is often urgent, rarely simple, and deeply personal.',
-    'about.p2': 'The right lawyer isn\'t always the most prominent one. It\'s the one who listens first, understands the full picture, and then acts with precision.',
+    'about.p2': 'Size and reputation alone do not make a good law firm. It is the lawyer who listens first, understands the full picture, and then acts with precision.',
     'about.p3': 'That precision comes from work that rarely shows. The research, the case law, the statutory commentary — building the picture piece by piece until the right argument becomes clear.',
     'about.p4': 'At Mairhofer Advokatur, that is where we begin. Every matter starts with understanding what is actually at stake — for you, not just on paper.',
 
