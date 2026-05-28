@@ -1069,6 +1069,10 @@
     // Auto year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
 
+    // Slow hero video to 80% speed
+    const heroVideo = document.querySelector('#hero video');
+    if (heroVideo) heroVideo.playbackRate = 0.8;
+
 
     // Menu button / dropdown
     const menuBtn    = document.getElementById('menu-btn');
