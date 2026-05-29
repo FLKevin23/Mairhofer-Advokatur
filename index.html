@@ -16,6 +16,20 @@
   <meta property="og:image" content="https://flkevin23.github.io/Mairhofer-Advokatur/assets/images/logo/MAIRHOFER%20ADVOKATUR.png" />
   <meta property="og:locale" content="de_LI" />
 
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mairhofer Advokatur" />
+  <meta name="twitter:description" content="Persönliche Rechtsberatung in Liechtenstein, Österreich und Polen — Ihr Anliegen ist der Ausgangspunkt." />
+  <meta name="twitter:image" content="https://flkevin23.github.io/Mairhofer-Advokatur/assets/images/logo/MAIRHOFER%20ADVOKATUR.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Mairhofer" />
+  <link rel="manifest" href="site.webmanifest" />
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -703,6 +717,26 @@
     }
   }
   </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Mairhofer Advokatur — Kanzlei Liechtenstein",
+    "description": "Persönliche Rechtsberatung in Liechtenstein, Österreich und Polen.",
+    "thumbnailUrl": "https://flkevin23.github.io/Mairhofer-Advokatur/assets/images/about/advokatur-about.webp",
+    "uploadDate": "2026-05-18",
+    "contentUrl": "https://ljeginwiylcorefesjrn.supabase.co/storage/v1/object/public/Lumen%20Advisory%20Video/2026-05-18T08-47-17_static_cinematic%20(1).mp4",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Mairhofer Advokatur",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://flkevin23.github.io/Mairhofer-Advokatur/assets/images/logo/MAIRHOFER%20ADVOKATUR.png"
+      }
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -746,7 +780,7 @@
   ═══════════════════════════════════════════════════════════════ -->
   <section id="hero" aria-label="Hero">
     <div class="hero-video-wrap">
-      <video autoplay muted loop playsinline preload="none">
+      <video autoplay muted loop playsinline preload="metadata" poster="assets/images/about/advokatur-about.webp">
         <source src="https://ljeginwiylcorefesjrn.supabase.co/storage/v1/object/public/Lumen%20Advisory%20Video/2026-05-18T08-47-17_static_cinematic%20(1).mp4" type="video/mp4" />
       </video>
       <div class="hero-content">
@@ -1069,9 +1103,15 @@
     // Auto year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Slow hero video to 80% speed
+    // Slow hero video to 80% speed, pause when scrolled out of view
     const heroVideo = document.querySelector('#hero video');
-    if (heroVideo) heroVideo.playbackRate = 0.8;
+    if (heroVideo) {
+      heroVideo.playbackRate = 0.8;
+      new IntersectionObserver(
+        ([entry]) => entry.isIntersecting ? heroVideo.play() : heroVideo.pause(),
+        { threshold: 0 }
+      ).observe(heroVideo);
+    }
 
 
     // Menu button / dropdown
