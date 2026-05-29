@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://flkevin23.github.io/Mairhofer-Advokatur/sitemap.xml
-Sitemap: https://flkevin23.github.io/Mairhofer-Advokatur/video-sitemap.xml
+Sitemap: https://m-advokatur.li/sitemap.xml
+Sitemap: https://m-advokatur.li/video-sitemap.xml
