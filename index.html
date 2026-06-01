@@ -32,6 +32,14 @@
 
   <!-- Fonts -->
 
+  <!-- Preconnect for video CDN -->
+  <link rel="preconnect" href="https://ljeginwiylcorefesjrn.supabase.co">
+  <!-- Preload LCP: hero poster image -->
+  <link rel="preload" as="image" href="assets/images/about/advokatur-about.webp" fetchpriority="high">
+  <!-- Preload critical fonts (Latin subset — used by German content) -->
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/cormorant-normal-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin.woff2" crossorigin>
+
   <link rel="stylesheet" href="style.css" />
 
   <!-- Structured Data -->
@@ -126,7 +134,7 @@
   <nav id="nav" role="navigation" aria-label="Hauptnavigation">
     <!-- Logo -->
     <a href="#" class="nav-logo" aria-label="Mairhofer Advokatur – Startseite">
-      <img src="assets/images/logo/MAIRHOFER ADVOKATUR.png" alt="Mairhofer Advokatur" class="nav-logo-img" />
+      <img src="assets/images/logo/MAIRHOFER ADVOKATUR.png" alt="Mairhofer Advokatur" class="nav-logo-img" fetchpriority="high" />
     </a>
 
     <!-- Right cluster -->
@@ -207,7 +215,7 @@
         <!-- Card 1: Private Clients und Non-Profits -->
         <a class="practice-card" href="private-clients.html">
           <div class="practice-card-icon" aria-hidden="true">
-            <img src="assets/images/rechtsgebiete/private-clients.webp" alt="Private Clients & Non-Profits">
+            <img src="assets/images/rechtsgebiete/private-clients.webp" alt="Private Clients & Non-Profits" loading="lazy" decoding="async">
           </div>
           <h3 data-i18n="practice.card1">Private Clients &amp; Non-Profits</h3>
         </a>
@@ -215,7 +223,7 @@
         <!-- Card 2: Digital Business -->
         <a class="practice-card" href="digital-business.html">
           <div class="practice-card-icon" aria-hidden="true">
-            <img src="assets/images/rechtsgebiete/digital-business.webp" alt="Digital Business">
+            <img src="assets/images/rechtsgebiete/digital-business.webp" alt="Digital Business" loading="lazy" decoding="async">
           </div>
           <h3 data-i18n="practice.card2">Digital Business</h3>
         </a>
@@ -223,7 +231,7 @@
         <!-- Card 3: Bank-, Versicherungs- und Finanzmarktrecht -->
         <a class="practice-card" href="finanzmarktrecht.html">
           <div class="practice-card-icon" aria-hidden="true">
-            <img src="assets/images/rechtsgebiete/finanzmarktrecht.webp" alt="Bank-, Versicherungs- und Finanzmarktrecht">
+            <img src="assets/images/rechtsgebiete/finanzmarktrecht.webp" alt="Bank-, Versicherungs- und Finanzmarktrecht" loading="lazy" decoding="async">
           </div>
           <h3 data-i18n="practice.card3">Bank-, Versicherungs- und Finanzmarktrecht</h3>
         </a>
@@ -231,7 +239,7 @@
         <!-- Card 4: Gesellschafts- und Handelsrecht -->
         <a class="practice-card" href="gesellschaftsrecht.html">
           <div class="practice-card-icon" aria-hidden="true">
-            <img src="assets/images/rechtsgebiete/corporate.webp" alt="Gesellschafts- und Handelsrecht">
+            <img src="assets/images/rechtsgebiete/corporate.webp" alt="Gesellschafts- und Handelsrecht" loading="lazy" decoding="async">
           </div>
           <h3 data-i18n="practice.card4">Gesellschafts- und Handelsrecht</h3>
         </a>
@@ -239,7 +247,7 @@
         <!-- Card 5: Immobilien- und Baurecht -->
         <a class="practice-card" href="immobilienrecht.html">
           <div class="practice-card-icon" aria-hidden="true">
-            <img src="assets/images/rechtsgebiete/immobilienrecht.webp" alt="Immobilien- und Baurecht">
+            <img src="assets/images/rechtsgebiete/immobilienrecht.webp" alt="Immobilien- und Baurecht" loading="lazy" decoding="async">
           </div>
           <h3 data-i18n="practice.card5">Immobilien- und Baurecht</h3>
         </a>
@@ -247,7 +255,7 @@
         <!-- Card 6: Streitbeilegung und Prozessführung -->
         <a class="practice-card" href="streitbeilegung.html">
           <div class="practice-card-icon" aria-hidden="true">
-            <img src="assets/images/rechtsgebiete/lady-justice.webp" alt="Streitbeilegung und Prozessführung">
+            <img src="assets/images/rechtsgebiete/lady-justice.webp" alt="Streitbeilegung und Prozessführung" loading="lazy" decoding="async">
           </div>
           <h3 data-i18n="practice.card6">Streitbeilegung und Prozessführung</h3>
         </a>
@@ -269,7 +277,7 @@
         <!-- Partner card: Remo Mairhofer -->
         <a class="partner-card" href="team.html#remo-mairhofer">
           <div class="partner-card-photo">
-            <img src="assets/images/team/advokatur-remo.webp" alt="Remo Mairhofer">
+            <img src="assets/images/team/advokatur-remo.webp" alt="Remo Mairhofer" loading="lazy" decoding="async">
           </div>
           <div class="partner-card-name">Remo Mairhofer</div>
           <div class="partner-card-title" data-i18n-html="partners.remo.title">
@@ -281,7 +289,7 @@
         <!-- Partner card: Tomasz Klimek -->
         <a class="partner-card" href="team.html#tomasz-klimek">
           <div class="partner-card-photo">
-            <img src="assets/images/team/advokatur-tomasz.webp" alt="Tomasz Klimek">
+            <img src="assets/images/team/advokatur-tomasz.webp" alt="Tomasz Klimek" loading="lazy" decoding="async">
           </div>
           <div class="partner-card-name">Tomasz Klimek</div>
           <div class="partner-card-title" data-i18n-html="partners.tomasz.title">
@@ -484,13 +492,20 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // Slow hero video to 80% speed, pause when scrolled out of view
+    // On mobile: kill video entirely (saves bandwidth; poster shown via CSS)
     const heroVideo = document.querySelector('#hero video');
     if (heroVideo) {
-      heroVideo.playbackRate = 0.8;
-      new IntersectionObserver(
-        ([entry]) => entry.isIntersecting ? heroVideo.play() : heroVideo.pause(),
-        { threshold: 0 }
-      ).observe(heroVideo);
+      if (window.matchMedia('(max-width: 768px)').matches) {
+        heroVideo.querySelectorAll('source').forEach(s => s.remove());
+        heroVideo.removeAttribute('src');
+        heroVideo.load();
+      } else {
+        heroVideo.playbackRate = 0.8;
+        new IntersectionObserver(
+          ([entry]) => entry.isIntersecting ? heroVideo.play() : heroVideo.pause(),
+          { threshold: 0 }
+        ).observe(heroVideo);
+      }
     }
 
 
