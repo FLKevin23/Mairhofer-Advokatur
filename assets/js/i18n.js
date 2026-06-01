@@ -146,8 +146,10 @@ function applyLanguage(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const saved = localStorage.getItem('lang') || 'de';
-  applyLanguage(saved);
+  // Only apply language if user previously chose EN — German is already in the HTML,
+  // so calling applyLanguage('de') would rebuild identical DOM nodes after first paint
+  // and cause measurable layout shift (CLS).
+  if (localStorage.getItem('lang') === 'en') applyLanguage('en');
 
   document.querySelectorAll('[data-lang]').forEach(btn => {
     btn.addEventListener('click', () => applyLanguage(btn.getAttribute('data-lang')));
