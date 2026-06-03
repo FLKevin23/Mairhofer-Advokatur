@@ -526,7 +526,8 @@
           if (!heroVideo.duration) return;
           const remaining = heroVideo.duration - heroVideo.currentTime;
           if (remaining <= FADE_SECS) {
-            fadeOverlay.style.opacity = Math.pow(1 - (remaining / FADE_SECS), 0.5);
+            const t = 1 - (remaining / FADE_SECS);
+            fadeOverlay.style.opacity = t * t;
           }
         });
 
