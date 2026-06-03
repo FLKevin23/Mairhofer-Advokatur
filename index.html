@@ -521,17 +521,24 @@
 
         const fadeOverlay = document.querySelector('.hero-fade-overlay');
         const FADE_SECS = 3;
+        let looping = false;
 
-        heroVideo.addEventListener('timeupdate', () => {
-          if (!heroVideo.duration) return;
-          const remaining = heroVideo.duration - heroVideo.currentTime;
-          if (remaining <= FADE_SECS) {
-            const t = 1 - (remaining / FADE_SECS);
-            fadeOverlay.style.opacity = t * t;
+        (function rafFade() {
+          if (!looping && heroVideo.duration) {
+            const remaining = heroVideo.duration - heroVideo.currentTime;
+            if (remaining <= FADE_SECS) {
+              const t = 1 - (remaining / FADE_SECS);
+              fadeOverlay.style.opacity = t * t;
+            } else {
+              fadeOverlay.style.opacity = 0;
+            }
           }
-        });
+          requestAnimationFrame(rafFade);
+        })();
 
         heroVideo.addEventListener('ended', () => {
+          looping = true;
+          fadeOverlay.style.transition = '';
           fadeOverlay.style.opacity = '1';
           setTimeout(() => {
             heroVideo.currentTime = 0;
@@ -541,6 +548,7 @@
               fadeOverlay.style.opacity = '0';
               fadeOverlay.addEventListener('transitionend', () => {
                 fadeOverlay.style.transition = '';
+                looping = false;
               }, { once: true });
             }, 50);
           }, 1000);
