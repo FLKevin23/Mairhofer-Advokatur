@@ -60,6 +60,109 @@ const translations = {
     'footer.privacy': 'Datenschutz',
     'footer.imprint': 'Impressum',
 
+    // Shared sub-pages
+    'page.back': '← Zurück zur Startseite',
+
+    // Private Clients
+    'pc.h1':      'Private Clients & Non-Profits',
+    'pc.p1':      'Liechtenstein bietet eine der dichtesten Strukturlandschaften im deutschsprachigen Raum — Stiftung, Trust, Anstalt und weitere Vehikel unter einem Rechtsdach, das auf internationale Privatkunden und gemeinnützige Organisationen gleichermaßen ausgerichtet ist.',
+    'pc.p2':      'Mairhofer Advokatur begleitet Sie rechtlich durch die Wahl, Errichtung und laufende Governance dieser Strukturen — von der einfachen Familienstiftung bis zum komplexen Trust-Geflecht.',
+    'pc.p3':      'Wo die juristische Arbeit endet, beginnt die treuhänderische: In enger Zusammenarbeit mit Lumen Advisory stellen wir sicher, dass Ihre Struktur nicht nur rechtlich sauber ist, sondern auch professionell verwaltet wird.',
+    'pc.closing': 'Zwei unabhängige Disziplinen, ein gemeinsames Mandat.',
+
+    // Digital Business
+    'db.h1':      'Digital Business',
+    'db.p1':      'Das Digitale ist kein Trend mehr — es ist Alltag, und längst auch Rechtsraum. Wer online handelt, publiziert, Daten verarbeitet oder eine Plattform betreibt, bewegt sich in einem Umfeld, das rechtliche Fragen genauso stellt wie die analoge Welt — oft schneller und mit weniger Präzedenz.',
+    'db.p2':      'Mairhofer Advokatur begleitet Unternehmen und Privatpersonen durch diesen Bereich: von Vertragsfragen rund um digitale Geschäftsmodelle über Datenschutz und KI-Compliance bis hin zu Reputationsschutz und Persönlichkeitsrechtsverletzungen im Netz.',
+    'db.closing': 'Wer öffentlich sichtbar ist — als Unternehmen, Marke oder Person — ist auch angreifbar. Wenn es passiert, wissen wir, was zu tun ist.',
+
+    // Finanzmarktrecht
+    'fm.h1':      'Bank-, Versicherungs- und Finanzmarktrecht',
+    'fm.p1':      'Finanzinstitute, Versicherungen und Unternehmen bewegen sich in einem Umfeld, in dem Verträge nicht nur rechtlich korrekt sein müssen — sie müssen standhalten, wenn es darauf ankommt.',
+    'fm.p2':      'Mairhofer Advokatur begleitet Banken und KMU bei der Ausgestaltung und Prüfung von Finanzierungsverträgen, Sicherheitsvereinbarungen und regulatorischen Anforderungen.',
+    'fm.closing': 'Für Mandanten, die eine Struktur errichten und verwalten lassen möchten, endet die Arbeit nicht beim Notar: In Zusammenarbeit mit Lumen Advisory übernehmen wir die vollständige Begleitung — der Mandant übergibt die Unterlagen, der Rest liegt bei uns.',
+
+    // Gesellschaftsrecht
+    'gr.h1':      'Gesellschafts- und Handelsrecht',
+    'gr.p1':      'Verträge sind das Fundament jeder geschäftlichen Beziehung — und oft das Erste, das unter Druck nachgibt.',
+    'gr.p2':      'Mairhofer Advokatur begleitet Unternehmen, Gemeinden und öffentliche Körperschaften bei allem, was rechtlich fixiert werden muss: von Gesellschaftsverträgen und Kooperationen bis hin zu Grundstücksübertragungen und Eigentumsrechten.',
+    'gr.p3':      'Wir lesen nicht nur den Text, den Sie uns vorlegen — wir denken mit, stellen die unbequemen Fragen und erkennen, wo ein Vertrag auf den ersten Blick solide wirkt, auf den zweiten aber Lücken lässt.',
+    'gr.closing': 'Wer seine Vereinbarungen von Anfang an sauber aufsetzt, spart sich später das, was kein Mandant will: einen Konflikt, der vermeidbar gewesen wäre.',
+
+    // Immobilienrecht
+    'ir.h1':      'Immobilien- und Baurecht',
+    'ir.p1':      'Immobilien und Baurecht sind Bereiche, wo ein übersehenes Detail auf dem Papier grössere Konsequenzen haben kann als jeder Baumangel.',
+    'ir.p2':      'Unsere tägliche Arbeit umfasst Mandate von Gemeinden, Privatpersonen und Bauunternehmen im Liechtensteiner Markt — Grundstückstausche, Schenkungen, Eigentumsübertragungen. Jede Transaktion wird rechtlich sauber dokumentiert und korrekt ins Grundbuch eingetragen.',
+    'ir.closing': 'Baufirmen werden entlang ihrer Projekte begleitet, bei der Aushandlung von Verträgen mit Auftraggebern oder Subunternehmern, aber auch dann, wenn im laufenden Betrieb rechtliche Fragen auftauchen, die schnelle Antworten brauchen.',
+
+    // Streitbeilegung
+    'sb.h1':      'Streitbeilegung und Prozessführung',
+    'sb.p1':      'Wenn ein Streit nicht mehr aussergerichtlich gelöst werden kann, braucht es jemanden, der den Weg durch das Verfahren kennt.',
+    'sb.p2':      'Privatpersonen werden vor Gericht und gegenüber Behörden vertreten — sei es in zivilrechtlichen Auseinandersetzungen, bei Rekursen gegen Behördenentscheide oder in anderen strittigen Angelegenheiten.',
+    'sb.p3':      'Verfahren dauern oft länger als erwartet und verlaufen selten geradlinig. Entscheidungen der Gegenseite, neue Beweismittel oder prozessuale Wendungen verlangen eine laufende Anpassung der Strategie.',
+    'sb.closing': 'Die Aufgabe ist, die Position des Mandanten in jeder Phase klar und konsequent zu vertreten — vom ersten Schriftsatz bis zum Urteil.',
+
+    // Team
+    'team.h1':          'Unser Team',
+    'team.remo.bio1':   'Remo Mairhofer ist Rechtsanwalt und lizenzierter Treuhänder, Gründer von MAIRHOFER ADVOKATUR und Gründer und CEO der Lumen Advisory Trust reg. in Liechtenstein. Seine Arbeit konzentriert sich auf die Gründung, Verwaltung und laufende Überwachung von Treuhand- und Stiftungsstrukturen und berät Intermediäre und Privatpersonen in grenzüberschreitenden Strukturen.',
+    'team.remo.bio2':   'Er hat Abschlüsse in Jura und Banking & Finance von der Universität St. Gallen und einen LL.M. von der Universität Sydney. Er ist in der liechtensteinischen Kanzlei zugelassen, hat die liechtensteinischen Treuhänderprüfungen bestanden und ist Stellvertreter Richter am Verfassungsgericht Liechtensteins.',
+    'team.tomasz.bio1': 'Dr. Tomasz Klimek ist öffentlicher Notar und Rechtsanwalt in Liechtenstein sowie Partner bei Mairhofer Advokatur. Er berät und beaufsichtigt rechtlich komplexe Treuhand- und Unternehmensstrukturen, mit besonderem Fokus auf grenzüberschreitende Stiftungen, Holdinggesellschaften und Vermögensverwaltungsanordnungen in Liechtenstein, Österreich und Polen.',
+    'team.tomasz.bio2': 'Dr. Klimek hat einen Doktor der Rechte von der Universität Wien und mehrere LL.M. Abschlüsse in Unternehmens-, Stiftungs- und Treuhandrecht. Er ist in Liechtenstein, Österreich und Polen zugelassen und ist der einzige polnischsprachige Rechtsanwalt in Liechtenstein, was ihm ermöglicht, Gerichtsbarkeiten mit Präzision und Verantwortung zu überbrücken.',
+
+    // Sitemap
+    'sitemap.h1':     'Sitemap',
+    'sitemap.group1': 'Startseite',
+    'sitemap.group2': 'Rechtsgebiete',
+    'sitemap.group3': 'Kanzlei',
+    'sitemap.group4': 'Rechtliches',
+
+    // Data Protection
+    'privacy.h1':          'Datenschutzerklärung',
+    'privacy.s1.title':    'I. Name und Anschrift des Verantwortlichen',
+    'privacy.s1.p1':       'Der Verantwortliche im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:',
+    'privacy.s2.title':    'II. Allgemeines zur Datenverarbeitung',
+    'privacy.s2.sub1.t':   '1. Umfang der Verarbeitung personenbezogener Daten',
+    'privacy.s2.sub1.p1':  'Unsere Verarbeitung personenbezogener Daten unserer Nutzer beschränkt sich auf jene Daten, die zur Bereitstellung einer funktionsfähigen Internetseite sowie unserer Inhalte und Leistungen erforderlich sind. Die Verarbeitung personenbezogener Daten unserer Nutzer erfolgt nur zu den mit ihnen vereinbarten Zwecken oder wenn eine sonstige rechtliche Grundlage (im Sinn der DSGVO) vorliegt. Es werden nur solche personenbezogenen Daten erhoben, die für die Durchführung und Abwicklung unserer Aufgaben und Leistungen tatsächlich erforderlich sind oder die Sie uns freiwillig zur Verfügung gestellt haben.',
+    'privacy.s2.sub2.t':   '2. Ihre Rechte (Betroffenenrechte)',
+    'privacy.s2.sub2.p1':  'Sie haben das Recht, Auskunft über Ihre von uns verarbeiteten personenbezogenen Daten zu verlangen. Insbesondere können Sie Auskunft über die Verarbeitungszwecke, die Kategorien der personenbezogenen Daten, die Kategorien von Empfängern, gegenüber denen Ihre Daten offengelegt wurden oder werden, die geplante Speicherdauer, das Bestehen eines Rechts auf Berichtigung, Löschung, Einschränkung der Verarbeitung oder Widerspruch, Datenübertragung, die Herkunft Ihrer Daten, sofern diese nicht bei uns erhoben wurden, sowie über das Bestehen einer automatisierten Entscheidungsfindung einschliesslich Profiling verlangen.',
+    'privacy.s2.sub2.p2':  'Sie haben auch das Recht, eine allenfalls erteilte Einwilligung zur Nutzung Ihrer personenbezogenen Daten jederzeit zu widerrufen.',
+    'privacy.s2.sub2.p3':  'Sofern Sie der Auffassung sind, dass die Verarbeitung Ihrer personenbezogenen Daten durch uns im Widerspruch zu den geltenden Datenschutzbestimmungen steht, haben Sie die Möglichkeit, sich bei der Datenschutzstelle zu beschweren.',
+    'privacy.s3.title':    'III. Beschreibung und Umfang der Datenverarbeitung',
+    'privacy.s3.sub1.t':   '1. Server Logfiles',
+    'privacy.s3.sub1.p1':  'Wenn Sie auf unsere Website zugreifen, werden automatisch mittels eines Cookies Informationen allgemeiner Natur erfasst. Diese Informationen (Server-Logfiles) beinhalten etwa die Art des Webbrowsers, das verwendete Betriebssystem, den Domainnamen Ihres Internet-Service-Providers und ähnliches. Hierbei handelt es sich ausschließlich um Informationen, welche keine Rückschlüsse auf Ihre Person zulassen.',
+    'privacy.s3.sub1.p2':  'Diese Informationen sind technisch notwendig, um von Ihnen angeforderte Inhalte von Webseiten korrekt auszuliefern und fallen bei Nutzung des Internets zwingend an. Sie werden insbesondere zu folgenden Zwecken verarbeitet:',
+    'privacy.s3.sub1.li1': 'Sicherstellung eines problemlosen Verbindungsaufbaus der Website,',
+    'privacy.s3.sub1.li2': 'Sicherstellung einer reibungslosen Nutzung unserer Website,',
+    'privacy.s3.sub1.li3': 'Auswertung der Systemsicherheit und -stabilität sowie',
+    'privacy.s3.sub1.li4': 'zu weiteren administrativen Zwecken.',
+    'privacy.s3.sub1.p3':  'Die Verarbeitung Ihrer personenbezogenen Daten basiert auf unserem berechtigten Interesse aus den vorgenannten Zwecken zur Datenerhebung. Wir verwenden Ihre Daten nicht, um Rückschlüsse auf Ihre Person zu ziehen. Empfänger der Daten sind nur die verantwortliche Stelle und ggf. Auftragsverarbeiter.',
+    'privacy.s3.sub1.p4':  'Anonyme Informationen dieser Art werden von uns ggfs. statistisch ausgewertet, um unseren Internetauftritt und die dahinterstehende Technik zu optimieren.',
+    'privacy.s3.sub2.t':   '2. Verwendung von Scriptbibliotheken (Google Webfonts)',
+    'privacy.s3.sub2.p1':  'Um unsere Inhalte browserübergreifend korrekt und grafisch ansprechend darzustellen, verwenden wir auf dieser Website Scriptbibliotheken und Schriftbibliotheken wie z.B. Google Webfonts. Google Webfonts werden zur Vermeidung mehrfachen Ladens in den Cache Ihres Browsers übertragen. Falls der Browser die Google Webfonts nicht unterstützt oder den Zugriff unterbindet, werden Inhalte in einer Standardschrift angezeigt.',
+    'privacy.s3.sub2.p2':  'Der Aufruf von Scriptbibliotheken oder Schriftbibliotheken löst automatisch eine Verbindung zum Betreiber der Bibliothek aus. Dabei ist es theoretisch möglich – aktuell allerdings auch unklar ob und ggf. zu welchen Zwecken – dass Betreiber entsprechender Bibliotheken Daten erheben.',
+    'privacy.s3.sub2.p3':  'Die Datenschutzrichtlinie des Bibliothekbetreibers Google finden Sie hier:',
+    'privacy.s3.sub3.t':   '3. Cookies',
+    'privacy.s3.sub3.p1':  'Wir verwenden auf unserer Webseite Cookies, um damit unser Angebot nutzerfreundlich zu gestalten. Cookies sind kleine Dateien, die Ihr Browser automatisch erstellt und die auf Ihrem Endgerät (Laptop, Tablet, Smartphone etc.) gespeichert werden, wenn Sie unsere Seite besuchen. Dadurch können wir Ihren Browser beim nächsten Besuch wieder erkennen.',
+    'privacy.s3.sub3.p2':  'Sollten Sie dies nicht wünschen, können Sie Ihren Browser so einrichten, dass er Sie über das Setzen von Cookies informiert und Sie diese im Einzelfall erlauben. Wir weisen Sie allerdings darauf hin, dass eine Deaktivierung dazu führt, dass Sie nicht alle Funktionen unserer Webseite nutzen können.',
+    'privacy.s3.sub4.t':   '4. Kontakt',
+    'privacy.s3.sub4.p1':  'Wenn Sie per E-Mail Kontakt mit uns aufnehmen, werden Ihre Angaben nur für die Bearbeitung der Anfrage, mögliche damit zusammenhängende weitere Fragen, gespeichert und nur im Rahmen der Anfrage verwendet.',
+    'privacy.s4.title':    'IV. Datensicherheit',
+    'privacy.s4.p1':       'Wir verwenden innerhalb des Webseite-Besuchs das verbreitete SSL-Verfahren (Secure Socket Layer) in Verbindung mit der jeweils höchsten Verschlüsselungsstufe, die von Ihrem Browser unterstützt wird. Ob eine einzelne Seite unseres Internetauftrittes verschlüsselt übertragen wird, erkennen Sie an der geschlossenen Darstellung des Schlüssel- beziehungsweise Schloss-Symbols in der Adressleiste Ihres Browsers.',
+    'privacy.s4.p2':       'Darüber hinaus wenden wir weitere geeignete technische und organisatorische Sicherheitsmassnahmen an, um Ihre Daten gegen zufällige oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust, Zerstörung oder gegen den unbefugten Zugriff Dritter zu schützen. Unsere Sicherheitsmassnahmen werden entsprechend der technologischen Entwicklung fortlaufend verbessert.',
+
+    // Imprint
+    'imprint.h1':       'Impressum',
+    'imprint.s1.title': 'Verantwortlich für den Inhalt',
+    'imprint.s2.title': 'Art. 5 ECG',
+    'imprint.s2.p1':    'Die Disziplinargewalt über die Rechtsanwälte wird vom Fürstlichen Obergericht ausgeübt.',
+    'imprint.s2.p2':    'Remo Mairhofer ist Mitglied der Liechtensteinischen Rechtsanwaltskammer (RAK) und untersteht insbesondere folgenden Gesetzen und Richtlinien: Gesetz über die Rechtsanwälte; Rechtsanwaltstarifgesetz; Rechtsanwaltstarifverordnung; Standesrichtlinien und Honorarrichtlinien der RAK.',
+    'imprint.s3.title': 'Inhalt des Onlineangebotes',
+    'imprint.s3.p1':    'Der Autor übernimmt keinerlei Gewähr für die Aktualität, Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen. Haftungsansprüche gegen den Autor, welche sich auf Schäden materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens des Autors kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt. Alle Angebote sind freibleibend und unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.',
+    'imprint.s4.title': 'Verweise und Links',
+    'imprint.s4.p1':    'Bei direkten oder indirekten Verweisen auf fremde Webseiten («Hyperlinks»), die ausserhalb des Verantwortungsbereiches des Autors liegen, würde eine Haftungsverpflichtung ausschliesslich in dem Fall in Kraft treten, in dem der Autor von den Inhalten Kenntnis hat und es ihm technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern. Der Autor erklärt hiermit ausdrücklich, dass zum Zeitpunkt der Linksetzung keine illegalen Inhalte auf den zu verlinkenden Seiten erkennbar waren. Auf die aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der verlinkten/verknüpften Seiten hat der Autor keinerlei Einfluss. Deshalb distanziert er sich hiermit ausdrücklich von allen Inhalten aller verlinkten/verknüpften Seiten, die nach der Linksetzung verändert wurden. Diese Feststellung gilt für alle innerhalb des eigenen Internetangebotes gesetzten Links und Verweise sowie für Fremdeinträge in vom Autor eingerichteten Gästebüchern, Diskussionsforen, Linkverzeichnissen, Mailinglisten und in allen anderen Formen von Datenbanken, auf deren Inhalt externe Schreibzugriffe möglich sind. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargebotener Informationen entstehen, haftet allein der Anbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist.',
+    'imprint.s5.title': 'Urheber- und Kennzeichenrecht',
+    'imprint.s5.p1':    'Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Bilder, Grafiken, Tondokumente, Videosequenzen und Texte zu beachten, von ihm selbst erstellte Bilder, Grafiken, Tondokumente, Videosequenzen und Texte zu nutzen oder auf lizenzfreie Grafiken, Tondokumente, Videosequenzen und Texte zurückzugreifen. Alle innerhalb des Internetangebotes genannten und ggf. durch Dritte geschützten Marken- und Warenzeichen unterliegen uneingeschränkt den Bestimmungen des jeweils gültigen Kennzeichenrechts und den Besitzrechten der jeweiligen eingetragenen Eigentümer. Allein aufgrund der blossen Nennung ist nicht der Schluss zu ziehen, dass Markenzeichen nicht durch Rechte Dritter geschützt sind! Das Copyright für veröffentlichte, vom Autor selbst erstellte Objekte bleibt allein beim Autor der Seiten. Eine Vervielfältigung oder Verwendung solcher Grafiken, Tondokumente, Videosequenzen und Texte in anderen elektronischen oder gedruckten Publikationen ist ohne ausdrückliche Zustimmung des Autors nicht gestattet.',
+
     // LinkedIn landing page
     'li.hero.label':           'Mairhofer Advokatur · Liechtenstein · Wien · Kraków',
     'li.hero.heading':         'Juristische Präzision.<br /><em>Drei Jurisdiktionen.</em>',
@@ -149,6 +252,109 @@ const translations = {
     'footer.rights':  'All rights reserved.',
     'footer.privacy': 'Privacy Policy',
     'footer.imprint': 'Legal Notice',
+
+    // Shared sub-pages
+    'page.back': '← Back to Home',
+
+    // Private Clients
+    'pc.h1':      'Private Clients & Non-Profits',
+    'pc.p1':      'Liechtenstein offers one of the most diverse structural landscapes in the German-speaking world — foundations, trusts, establishments and further vehicles under a single legal framework designed equally for international private clients and non-profit organisations.',
+    'pc.p2':      'Mairhofer Advokatur guides you through the selection, formation and ongoing governance of these structures — from a straightforward family foundation to a complex trust arrangement.',
+    'pc.p3':      'Where the legal work ends, the fiduciary work begins: in close collaboration with Lumen Advisory, we ensure that your structure is not only legally sound but also professionally managed.',
+    'pc.closing': 'Two independent disciplines. One shared mandate.',
+
+    // Digital Business
+    'db.h1':      'Digital Business',
+    'db.p1':      'Digital is no longer a trend — it is everyday reality, and long since a legal space in its own right. Anyone who trades, publishes, processes data or operates a platform online navigates an environment that raises legal questions just as the physical world does — often faster and with less precedent.',
+    'db.p2':      'Mairhofer Advokatur advises companies and individuals across this field: from contractual questions around digital business models and data protection to AI compliance, reputation protection and violations of personal rights online.',
+    'db.closing': 'Anyone who is publicly visible — as a business, a brand or a person — is also exposed. When it happens, we know what to do.',
+
+    // Finanzmarktrecht
+    'fm.h1':      'Banking, Insurance & Financial Markets Law',
+    'fm.p1':      'Financial institutions, insurers and businesses operate in an environment where contracts must not only be legally correct — they must hold when it matters.',
+    'fm.p2':      'Mairhofer Advokatur advises banks and SMEs on the structuring and review of financing agreements, security arrangements and regulatory requirements.',
+    'fm.closing': 'For clients who wish to establish and administer a structure, the work does not end at the notary: in collaboration with Lumen Advisory, we provide complete end-to-end support — the client hands over the documents and we handle the rest.',
+
+    // Gesellschaftsrecht
+    'gr.h1':      'Corporate & Commercial Law',
+    'gr.p1':      'Contracts are the foundation of every business relationship — and often the first thing to give way under pressure.',
+    'gr.p2':      'Mairhofer Advokatur advises companies, municipalities and public bodies on everything that needs to be set down in law: from articles of association and cooperation agreements to property transfers and ownership rights.',
+    'gr.p3':      'We do not simply read the text you present to us — we think ahead, ask the uncomfortable questions and identify where a contract looks solid at first glance but reveals gaps on closer inspection.',
+    'gr.closing': 'Those who structure their agreements correctly from the outset spare themselves what no client wants: a conflict that could have been avoided.',
+
+    // Immobilienrecht
+    'ir.h1':      'Real Estate & Construction Law',
+    'ir.p1':      'Real estate and construction law are areas where an overlooked detail on paper can have greater consequences than any structural defect.',
+    'ir.p2':      'Our day-to-day work includes mandates from municipalities, private individuals and construction companies in the Liechtenstein market — land exchanges, gifts, transfers of ownership. Every transaction is documented with legal precision and correctly registered in the land register.',
+    'ir.closing': 'Construction firms are supported throughout their projects — in negotiating contracts with clients or subcontractors, and when legal questions arise during operations that require prompt answers.',
+
+    // Streitbeilegung
+    'sb.h1':      'Dispute Resolution & Litigation',
+    'sb.p1':      'When a dispute can no longer be resolved out of court, you need someone who knows the way through the proceedings.',
+    'sb.p2':      'Private individuals are represented before courts and authorities — whether in civil disputes, appeals against administrative decisions or other contentious matters.',
+    'sb.p3':      'Proceedings often take longer than expected and rarely run in a straight line. Decisions by the opposing party, new evidence or procedural developments require constant strategic adjustment.',
+    'sb.closing': 'The task is to represent the client\'s position clearly and consistently at every stage — from the first submission to the final judgment.',
+
+    // Team
+    'team.h1':          'Our Team',
+    'team.remo.bio1':   'Remo Mairhofer is an attorney-at-law and licensed trustee, founder of MAIRHOFER ADVOKATUR and founder and CEO of Lumen Advisory Trust reg. in Liechtenstein. His work focuses on the formation, administration and ongoing supervision of trust and foundation structures, and he advises intermediaries and private individuals on cross-border structures.',
+    'team.remo.bio2':   'He holds degrees in Law and Banking & Finance from the University of St. Gallen and an LL.M. from the University of Sydney. He is admitted to the Liechtenstein bar, has passed the Liechtenstein trustee examinations and serves as a substitute judge at the Constitutional Court of Liechtenstein.',
+    'team.tomasz.bio1': 'Dr. Tomasz Klimek is a public notary and attorney-at-law in Liechtenstein and a partner at Mairhofer Advokatur. He advises and oversees legally complex trust and corporate structures, with a particular focus on cross-border foundations, holding companies and asset management arrangements in Liechtenstein, Austria and Poland.',
+    'team.tomasz.bio2': 'Dr. Klimek holds a doctorate in law from the University of Vienna and several LL.M. degrees in corporate, foundation and trust law. He is admitted to the bar in Liechtenstein, Austria and Poland, and is the only Polish-speaking attorney in Liechtenstein — enabling him to bridge jurisdictions with precision and responsibility.',
+
+    // Sitemap
+    'sitemap.h1':     'Sitemap',
+    'sitemap.group1': 'Home',
+    'sitemap.group2': 'Practice Areas',
+    'sitemap.group3': 'Firm',
+    'sitemap.group4': 'Legal',
+
+    // Data Protection
+    'privacy.h1':          'Privacy Policy',
+    'privacy.s1.title':    'I. Name and Address of the Controller',
+    'privacy.s1.p1':       'The controller within the meaning of the General Data Protection Regulation (GDPR) is:',
+    'privacy.s2.title':    'II. General Information on Data Processing',
+    'privacy.s2.sub1.t':   '1. Scope of Processing of Personal Data',
+    'privacy.s2.sub1.p1':  'Our processing of personal data of our users is limited to the data necessary to provide a functional website and our content and services. Personal data of our users is processed only for the purposes agreed with them or where another legal basis under the GDPR exists. Only such personal data is collected as is actually required for the performance and handling of our tasks and services, or which you have provided to us voluntarily.',
+    'privacy.s2.sub2.t':   '2. Your Rights (Data Subject Rights)',
+    'privacy.s2.sub2.p1':  'You have the right to request information about your personal data processed by us. In particular, you may request information about the purposes of processing, the categories of personal data, the categories of recipients to whom your data has been or will be disclosed, the planned storage period, the existence of a right to rectification, erasure, restriction of processing or objection, data portability, the origin of your data where it was not collected from you, and the existence of automated decision-making including profiling.',
+    'privacy.s2.sub2.p2':  'You also have the right to withdraw any consent you may have given for the use of your personal data at any time.',
+    'privacy.s2.sub2.p3':  'If you consider that the processing of your personal data by us is contrary to applicable data protection law, you have the right to lodge a complaint with the data protection authority.',
+    'privacy.s3.title':    'III. Description and Scope of Data Processing',
+    'privacy.s3.sub1.t':   '1. Server Log Files',
+    'privacy.s3.sub1.p1':  'When you access our website, general information is automatically collected via a cookie. This information (server log files) includes details such as the type of web browser, the operating system used, the domain name of your internet service provider and similar data. This information does not allow any conclusions to be drawn about your identity.',
+    'privacy.s3.sub1.p2':  'This information is technically necessary in order to correctly deliver the website content you have requested and is inevitably generated when using the internet. It is processed in particular for the following purposes:',
+    'privacy.s3.sub1.li1': 'Ensuring a smooth connection to the website,',
+    'privacy.s3.sub1.li2': 'Ensuring smooth use of our website,',
+    'privacy.s3.sub1.li3': 'Evaluating system security and stability, and',
+    'privacy.s3.sub1.li4': 'For further administrative purposes.',
+    'privacy.s3.sub1.p3':  'The processing of your personal data is based on our legitimate interest in the aforementioned purposes of data collection. We do not use your data to draw conclusions about your identity. Recipients of the data are only the controller and, where applicable, processors.',
+    'privacy.s3.sub1.p4':  'We may use anonymous information of this kind for statistical analysis in order to optimise our website and the underlying technology.',
+    'privacy.s3.sub2.t':   '2. Use of Script Libraries (Google Web Fonts)',
+    'privacy.s3.sub2.p1':  'In order to display our content correctly and in a visually appealing manner across different browsers, we use script and font libraries such as Google Web Fonts on this website. Google Web Fonts are transferred to your browser\'s cache to avoid repeated loading. If your browser does not support Google Web Fonts or blocks access, content will be displayed in a standard font.',
+    'privacy.s3.sub2.p2':  'Calling up script or font libraries automatically triggers a connection to the operator of the library. It is theoretically possible — though currently unclear whether and for what purposes — that operators of such libraries collect data.',
+    'privacy.s3.sub2.p3':  'Google\'s privacy policy can be found here:',
+    'privacy.s3.sub3.t':   '3. Cookies',
+    'privacy.s3.sub3.p1':  'We use cookies on our website to make our services more user-friendly. Cookies are small files that your browser automatically creates and that are stored on your device (laptop, tablet, smartphone, etc.) when you visit our site. This allows us to recognise your browser on your next visit.',
+    'privacy.s3.sub3.p2':  'If you do not wish this, you can configure your browser to notify you when cookies are set and to allow them only on a case-by-case basis. Please note, however, that disabling cookies may mean that you are unable to use all functions of our website.',
+    'privacy.s3.sub4.t':   '4. Contact',
+    'privacy.s3.sub4.p1':  'If you contact us by email, your details will be stored solely for the purpose of processing your enquiry and any related follow-up questions, and will only be used in the context of that enquiry.',
+    'privacy.s4.title':    'IV. Data Security',
+    'privacy.s4.p1':       'During your visit to our website, we use the widely used SSL (Secure Socket Layer) procedure in conjunction with the highest level of encryption supported by your browser. You can tell whether an individual page of our website is being transmitted in encrypted form by the closed key or padlock symbol in the address bar of your browser.',
+    'privacy.s4.p2':       'In addition, we apply appropriate technical and organisational security measures to protect your data against accidental or intentional manipulation, partial or complete loss, destruction or unauthorised access by third parties. Our security measures are continuously updated in line with technological developments.',
+
+    // Imprint
+    'imprint.h1':       'Legal Notice',
+    'imprint.s1.title': 'Responsible for Content',
+    'imprint.s2.title': 'Art. 5 ECG',
+    'imprint.s2.p1':    'Disciplinary authority over attorneys-at-law is exercised by the Princely Court of Appeal.',
+    'imprint.s2.p2':    'Remo Mairhofer is a member of the Liechtenstein Bar Association (RAK) and is subject in particular to the following laws and guidelines: Law on Attorneys-at-Law; Attorneys\' Fees Act; Attorneys\' Fees Ordinance; Professional Rules and Fee Guidelines of the RAK.',
+    'imprint.s3.title': 'Content of the Online Offer',
+    'imprint.s3.p1':    'The author accepts no liability for the accuracy, correctness, completeness or quality of the information provided. Claims against the author relating to material or immaterial damage caused by the use or non-use of the information provided, or by the use of incorrect or incomplete information, are excluded in principle, unless the author can be shown to have acted with wilful intent or gross negligence. All offers are subject to change and non-binding. The author expressly reserves the right to modify, supplement or delete parts of the pages or the entire offer without prior notice, or to cease publication temporarily or permanently.',
+    'imprint.s4.title': 'References and Links',
+    'imprint.s4.p1':    'In the case of direct or indirect references to third-party websites ("hyperlinks") that lie outside the author\'s area of responsibility, liability would only arise if the author had knowledge of the content and it were technically possible and reasonable to prevent use in the case of unlawful content. The author hereby expressly declares that at the time of linking no illegal content was discernible on the pages to be linked. The author has no influence over the current or future design, content or authorship of the linked pages and therefore expressly dissociates himself from all content of all linked pages that were changed after the link was set. This applies to all links and references set within the author\'s own website, as well as to third-party entries in guest books, discussion forums, link directories, mailing lists and all other forms of database to which external write access is possible. Liability for illegal, incorrect or incomplete content and in particular for damages arising from the use or non-use of such information rests solely with the provider of the page to which reference was made, not with the party who merely refers to the respective publication via links.',
+    'imprint.s5.title': 'Copyright and Trademark Law',
+    'imprint.s5.p1':    'The author endeavours to observe the copyrights of the images, graphics, sound documents, video sequences and texts used in all publications, to use images, graphics, sound documents, video sequences and texts created by the author, or to make use of licence-free graphics, sound documents, video sequences and texts. All brand names and trademarks mentioned within the online offer and where applicable protected by third parties are subject without restriction to the provisions of applicable trademark law and the ownership rights of the respective registered owners. The mere mention of a trademark does not imply that it is not protected by third-party rights. The copyright for objects published by the author and created by the author remains solely with the author. Reproduction or use of such graphics, sound documents, video sequences and texts in other electronic or printed publications is not permitted without the express consent of the author.',
 
     // LinkedIn landing page
     'li.hero.label':           'Mairhofer Advokatur · Liechtenstein · Vienna · Kraków',
