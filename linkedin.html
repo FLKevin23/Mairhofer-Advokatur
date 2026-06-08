@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YNPV2D1P13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YNPV2D1P13');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Mairhofer Advokatur — Liechtenstein · Wien · Kraków</title>
+  <meta name="description" content="Juristische Präzision in drei Jurisdiktionen. Mairhofer Advokatur — persönliche Rechtsberatung in Liechtenstein, Österreich und Polen." />
+
+  <!-- Open Graph (LinkedIn preview) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mairhofer Advokatur — Juristische Präzision. Drei Jurisdiktionen." />
+  <meta property="og:description" content="Persönliche Rechtsberatung in Liechtenstein, Österreich und Polen — für Mandanten, die klare Antworten erwarten." />
+  <meta property="og:url" content="https://m-advokatur.li/linkedin.html" />
+  <meta property="og:image" content="https://m-advokatur.li/assets/images/og/home.png" />
+  <meta property="og:locale" content="de_LI" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Mairhofer" />
+
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/cormorant-normal-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin.woff2" crossorigin>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* ── LinkedIn landing page ─────────────────────────────────── */
+
+    .li-nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 0 48px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(14, 16, 20, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ── Hero ── */
+    .li-hero {
+      min-height: 100svh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    .li-hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('assets/images/about/advokatur-about.webp');
+      background-size: cover;
+      background-position: center top;
+      opacity: 0.18;
+    }
+    .li-hero-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent 45%, var(--bg) 100%);
+    }
+    .li-hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 820px;
+      padding: 130px 48px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+    }
+    .li-hero-label {
+      font-family: var(--font-sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .li-hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(54px, 9vw, 100px);
+      font-weight: 300;
+      line-height: 1.06;
+      color: var(--text);
+    }
+    .li-hero h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .li-hero-sub {
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--text-muted);
+      max-width: 560px;
+      line-height: 1.7;
+    }
+    .li-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--accent);
+      color: var(--bg);
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 15px 34px;
+      border-radius: 4px;
+      transition: background 0.2s, transform 0.15s;
+      text-decoration: none;
+      margin-top: 12px;
+    }
+    .li-cta:hover { background: #d9bc80; transform: translateY(-1px); }
+    .li-cta-arrow { font-style: normal; transition: transform 0.2s; }
+    .li-cta:hover .li-cta-arrow { transform: translateX(4px); }
+
+    /* ── Services ── */
+    .li-services {
+      padding: 100px 0 96px;
+    }
+    .li-services-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+    .li-services-header {
+      margin-bottom: 52px;
+    }
+    .li-services-heading {
+      font-family: var(--font-serif);
+      font-size: clamp(30px, 4vw, 48px);
+      font-weight: 300;
+      line-height: 1.2;
+      color: var(--text);
+      margin-bottom: 0;
+    }
+    .li-services-heading em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .li-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .li-card {
+      background: var(--bg-card);
+      padding: 36px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: background 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .li-card:hover { background: #191c22; }
+    .li-card.featured {
+      background: #14181e;
+      border-top: 2px solid var(--accent);
+    }
+    .li-card.featured:hover { background: #181d24; }
+    .li-card-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent-dim);
+      border-radius: 3px;
+      padding: 3px 8px;
+      width: fit-content;
+      margin-bottom: 6px;
+    }
+    .li-card-title {
+      font-family: var(--font-serif);
+      font-size: 21px;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.25;
+    }
+    .li-card.featured .li-card-title {
+      font-size: 23px;
+    }
+    .li-card-desc {
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      font-weight: 300;
+      color: var(--text-muted);
+      line-height: 1.65;
+      flex: 1;
+    }
+    .li-card-link {
+      font-family: var(--font-sans);
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      color: var(--accent-dim);
+      margin-top: 12px;
+      transition: color 0.2s;
+    }
+    .li-card:hover .li-card-link { color: var(--accent); }
+
+    /* ── Contact ── */
+    .li-contact {
+      padding: 96px 0 120px;
+      text-align: center;
+    }
+    .li-contact-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .li-contact-heading {
+      font-family: var(--font-serif);
+      font-size: clamp(36px, 5vw, 60px);
+      font-weight: 300;
+      line-height: 1.12;
+      color: var(--text);
+    }
+    .li-contact-heading em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .li-contact-sub {
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+    .li-email-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid var(--accent-dim);
+      color: var(--accent);
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      padding: 14px 30px;
+      border-radius: 4px;
+      transition: background 0.2s, border-color 0.2s, color 0.2s;
+      text-decoration: none;
+      margin-top: 8px;
+    }
+    .li-email-btn:hover {
+      background: rgba(201, 169, 110, 0.08);
+      border-color: var(--accent);
+      color: var(--text);
+    }
+
+    /* ── Offices ── */
+    .li-offices {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 56px;
+      text-align: left;
+      width: 100%;
+    }
+    .li-office {
+      background: var(--bg-card);
+      padding: 28px 28px 32px;
+    }
+    .li-office-city {
+      font-family: var(--font-sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    .li-office p {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+    .li-office a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .li-office a:hover { color: var(--accent); }
+
+    /* ── Mobile ── */
+    @media (max-width: 768px) {
+      .li-nav { padding: 0 20px; }
+      .li-hero-content { padding: 100px 24px 64px; }
+      .li-services { padding: 72px 0; }
+      .li-services-inner { padding: 0 24px; }
+      .li-grid { grid-template-columns: 1fr; }
+      .li-contact { padding: 72px 0 96px; }
+      .li-contact-inner { padding: 0 24px; }
+      .li-offices { grid-template-columns: 1fr; }
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .li-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV (simplified — no menu on a landing page) -->
+  <nav class="li-nav" role="navigation" aria-label="Navigation">
+    <a href="index.html" class="nav-logo" aria-label="Mairhofer Advokatur – Zur Startseite">
+      <img src="assets/images/logo/MAIRHOFER ADVOKATUR.png" alt="Mairhofer Advokatur" class="nav-logo-img" fetchpriority="high" />
+    </a>
+    <div class="lang-switcher" role="group" aria-label="Sprache">
+      <button class="active" data-lang="de" aria-pressed="true">DE</button>
+      <span class="lang-divider" aria-hidden="true">|</span>
+      <button data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="li-hero" aria-label="Hero">
+    <div class="li-hero-bg" aria-hidden="true"></div>
+    <div class="li-hero-gradient" aria-hidden="true"></div>
+    <div class="li-hero-content">
+      <span class="li-hero-label" data-i18n="li.hero.label">Mairhofer Advokatur &nbsp;·&nbsp; Liechtenstein &nbsp;·&nbsp; Wien &nbsp;·&nbsp; Kraków</span>
+      <h1 data-i18n-html="li.hero.heading">Juristische Präzision.<br /><em>Drei Jurisdiktionen.</em></h1>
+      <p class="li-hero-sub" data-i18n="li.hero.sub">Persönliche Rechtsberatung in Liechtenstein, Österreich und Polen — für Mandanten, die klare Antworten erwarten.</p>
+      <a href="mailto:office@m-advokatur.li" class="li-cta">
+        <span data-i18n="li.hero.cta">Schreiben Sie uns</span>
+        <span class="li-cta-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SERVICES -->
+  <section class="li-services" aria-labelledby="li-services-heading">
+    <div class="li-services-inner">
+      <div class="li-services-header">
+        <span class="section-label" data-i18n="li.services.label">Rechtsgebiete</span>
+        <h2 class="li-services-heading" id="li-services-heading" data-i18n-html="li.services.heading">Was wir tun — und worin wir <em>führend</em> sind.</h2>
+      </div>
+
+      <div class="li-grid">
+
+        <!-- Featured -->
+        <a href="private-clients.html" class="li-card featured">
+          <span class="li-card-badge" data-i18n="li.card.featured.badge">Unser Kernbereich</span>
+          <span class="li-card-title" data-i18n="li.card1.title">Private Clients &amp; Non-Profits</span>
+          <p class="li-card-desc" data-i18n="li.card1.desc">Stiftungen, Trusts und Anstalten in Liechtenstein. Remo Mairhofer ist zugelassener Treuhänder — juristische und treuhänderische Beratung aus einer Hand.</p>
+          <span class="li-card-link" data-i18n="li.learn.more" aria-hidden="true">Mehr erfahren →</span>
+        </a>
+
+        <a href="digital-business.html" class="li-card">
+          <span class="li-card-title" data-i18n="li.card2.title">Digital Business</span>
+          <p class="li-card-desc" data-i18n="li.card2.desc">Startups, Tokenisierung, KI-Regulierung und digitale Verträge — Recht für die digitale Wirtschaft.</p>
+          <span class="li-card-link" data-i18n="li.learn.more" aria-hidden="true">Mehr erfahren →</span>
+        </a>
+
+        <a href="finanzmarktrecht.html" class="li-card">
+          <span class="li-card-title" data-i18n="li.card3.title">Bank-, Versicherungs- und Finanzmarktrecht</span>
+          <p class="li-card-desc" data-i18n="li.card3.desc">Bankrecht, Versicherungsrecht und Finanzmarktaufsicht in Liechtenstein und Österreich.</p>
+          <span class="li-card-link" data-i18n="li.learn.more" aria-hidden="true">Mehr erfahren →</span>
+        </a>
+
+        <a href="gesellschaftsrecht.html" class="li-card">
+          <span class="li-card-title" data-i18n="li.card4.title">Gesellschafts- und Handelsrecht</span>
+          <p class="li-card-desc" data-i18n="li.card4.desc">Gründung, Umstrukturierung und M&amp;A in drei Jurisdiktionen. Gesellschaftsrechtliche Strukturen, die halten.</p>
+          <span class="li-card-link" data-i18n="li.learn.more" aria-hidden="true">Mehr erfahren →</span>
+        </a>
+
+        <a href="immobilienrecht.html" class="li-card">
+          <span class="li-card-title" data-i18n="li.card5.title">Immobilien- und Baurecht</span>
+          <p class="li-card-desc" data-i18n="li.card5.desc">Kauf, Miete, Pacht und Baurecht in Liechtenstein, Österreich und Polen.</p>
+          <span class="li-card-link" data-i18n="li.learn.more" aria-hidden="true">Mehr erfahren →</span>
+        </a>
+
+        <a href="streitbeilegung.html" class="li-card">
+          <span class="li-card-title" data-i18n="li.card6.title">Streitbeilegung und Prozessführung</span>
+          <p class="li-card-desc" data-i18n="li.card6.desc">Litigation und alternative Streitbeilegung — wenn Verhandeln nicht mehr reicht.</p>
+          <span class="li-card-link" data-i18n="li.learn.more" aria-hidden="true">Mehr erfahren →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section class="li-contact" aria-labelledby="li-contact-heading">
+    <div class="li-contact-inner">
+      <span class="section-label" data-i18n="li.contact.label">Kontakt</span>
+      <h2 class="li-contact-heading" id="li-contact-heading" data-i18n-html="li.contact.heading">Ihr nächster Schritt<br />ist ein <em>E-Mail.</em></h2>
+      <p class="li-contact-sub" data-i18n="li.contact.sub">Wir antworten persönlich — kein Kontaktformular, kein Callcenter.</p>
+      <a href="mailto:office@m-advokatur.li" class="li-email-btn">
+        office@m-advokatur.li
+      </a>
+
+      <div class="li-offices">
+        <div class="li-office">
+          <div class="li-office-city" data-i18n="li.office.schaan">Büro Schaan</div>
+          <p>Im Bretscha 7<br />FL-9494 Schaan<br /><a href="tel:+42334011 20">+423 340 11 20</a></p>
+        </div>
+        <div class="li-office">
+          <div class="li-office-city" data-i18n="li.office.wien">Büro Wien</div>
+          <p>Mahlerstraße 13/1B<br />A-1010 Wien<br /><a href="tel:+431904 3134">+43 1 904 31 34</a></p>
+        </div>
+        <div class="li-office">
+          <div class="li-office-city" data-i18n="li.office.krakow">Büro Kraków</div>
+          <p>ul. Kielecka 19<br />PL-31-523 Kraków<br /><a href="tel:+48600786706">+48 600 786 706</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-main">
+        <img src="assets/images/logo/MAIRHOFER ADVOKATUR.png" alt="Mairhofer Advokatur" class="footer-logo-img" />
+        <div class="footer-networks">
+          <a href="https://www.rak.li/" target="_blank" rel="noopener" class="footer-network-badge" aria-label="Liechtensteinische Rechtsanwaltskammer">
+            <img src="assets/images/memberships/logo_rak-fl.svg" alt="Liechtensteinische Rechtsanwaltskammer" />
+          </a>
+          <a href="https://rakwien.at/" target="_blank" rel="noopener" class="footer-network-badge" aria-label="Rechtsanwaltskammer Wien">
+            <img src="assets/images/memberships/logo_rak-at.svg" alt="Rechtsanwaltskammer Wien" />
+          </a>
+          <a href="https://www.notariatskammer.li/index.php/de/" target="_blank" rel="noopener" class="footer-network-badge" aria-label="Notariatskammer Liechtenstein">
+            <img src="assets/images/memberships/logo_notariatskammer-fl.svg" alt="Notariatskammer Liechtenstein" />
+          </a>
+          <a href="https://www.ifa-fl.li/" target="_blank" rel="noopener" class="footer-network-badge" aria-label="IFA Liechtenstein">
+            <img src="assets/images/memberships/logo_fiscal-association-fl.svg" alt="IFA Liechtenstein" />
+          </a>
+          <a href="https://oirp.krakow.pl/" target="_blank" rel="noopener" class="footer-network-badge" aria-label="Okręgowa Izba Radców Prawnych Kraków">
+            <img src="assets/images/memberships/logo_bezirkskammer-krakau.svg" alt="Okręgowa Izba Radców Prawnych Kraków" />
+          </a>
+          <a href="https://www.cii.co.uk/" target="_blank" rel="noopener" class="footer-network-badge" aria-label="Chartered Insurance Institute">
+            <img src="assets/images/memberships/logo_chartered-insurance-institute.svg" alt="Chartered Insurance Institute" />
+          </a>
+          <a href="https://www.techlondonadvocates.org.uk/" target="_blank" rel="noopener" class="footer-network-badge" aria-label="Tech London Advocates">
+            <img src="assets/images/memberships/logo_tech-london-advocates.svg" alt="Tech London Advocates" />
+          </a>
+          <a href="https://lfnglobal.com/" target="_blank" rel="noopener" class="footer-network-badge" aria-label="The Law Network">
+            <img src="assets/images/memberships/logo_the-law-network.svg" alt="The Law Network" />
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Mairhofer Advokatur. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span></p>
+        <nav class="footer-legal" aria-label="Rechtliche Links">
+          <a href="sitemap.html">Sitemap</a>
+          <span>·</span>
+          <a href="data-protection.html" data-i18n="footer.privacy">Datenschutz</a>
+          <span>·</span>
+          <a href="imprint.html" data-i18n="footer.imprint">Impressum</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/i18n.js"></script>
+
+</body>
+</html>
