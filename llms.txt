@@ -13,6 +13,7 @@ Mairhofer Advokatur is a boutique law firm based in Schaan, Liechtenstein. The f
 - /gesellschaftsrecht.html: Gesellschafts- und Handelsrecht — corporate and commercial law
 - /immobilienrecht.html: Immobilien- und Baurecht — real estate and construction law
 - /streitbeilegung.html: Streitbeilegung und Prozessführung — dispute resolution and litigation
+- /linkedin.html: LinkedIn Landing — targeted landing page for visitors from LinkedIn
 - /sitemap.html: Sitemap — overview of all pages
 - /data-protection.html: Datenschutzerklärung — privacy policy
 - /imprint.html: Impressum — legal notice
