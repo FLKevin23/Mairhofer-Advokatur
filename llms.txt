@@ -6,7 +6,9 @@ Mairhofer Advokatur is a boutique law firm based in Schaan, Liechtenstein. The f
 
 ## Pages
 - /: Homepage — about the firm, practice areas, team overview, FAQ, contact
-- /team.html: Team — profiles of Remo Mairhofer and Dr. Tomasz Klimek
+- /team.html: Team — overview linking to individual partner profiles
+- /remo-mairhofer.html: Remo Mairhofer — Rechtsanwalt, Treuhänder, Gründer & CEO of Mairhofer Advokatur
+- /tomasz-klimek.html: Dr. Tomasz Klimek — Rechtsanwalt (FL, A & PL), Öffentlicher Notar, Partner
 - /private-clients.html: Private Clients & Non-Profits — legal services for individuals and foundations
 - /digital-business.html: Digital Business — tech law, data protection, digital contracts
 - /finanzmarktrecht.html: Bank-, Versicherungs- und Finanzmarktrecht — financial market regulation
@@ -23,3 +25,6 @@ Mairhofer Advokatur is a boutique law firm based in Schaan, Liechtenstein. The f
 - Büro Wien: Mahlerstraße 13/1B, A-1010 Wien, Austria — +43 1 904 31 34
 - Büro Kraków: ul. Kielecka 19, PL-31-523 Kraków, Poland — +48 600 786 706
 - Email: office@mairhofer-advokatur.li
+- LinkedIn (company): https://www.linkedin.com/company/lumen-advisory-liechtenstein/
+- LinkedIn (Remo Mairhofer): https://www.linkedin.com/in/remomairhofer/
+- LinkedIn (Dr. Tomasz Klimek): https://www.linkedin.com/in/dr-tomasz-klimek-76665ba2/

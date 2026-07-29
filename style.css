@@ -752,6 +752,11 @@ img { display: block; max-width: 100%; }
 .back-link:hover { color: var(--text); }
 
 /* ─── Sub-pages: Team ────────────────────────────────────────── */
+.team-hub {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 100px 48px;
+}
 .team-section {
   max-width: 780px;
   margin: 0 auto;
@@ -806,6 +811,32 @@ img { display: block; max-width: 100%; }
 }
 .team-bio p { margin-bottom: 20px; }
 .team-bio p:last-child { margin-bottom: 0; }
+.team-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 36px;
+  padding: 10px 22px;
+  border: 1px solid var(--accent-dim);
+  border-radius: 4px;
+  color: var(--accent);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.team-linkedin:hover { background: rgba(201, 169, 110, 0.08); border-color: var(--accent); color: var(--text); }
+.team-linkedin svg { width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
+.team-crosslink {
+  margin-top: 48px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+.team-crosslink a { color: var(--accent); text-decoration: none; transition: opacity 0.2s; }
+.team-crosslink a:hover { opacity: 0.75; }
 .back-wrap {
   max-width: 780px;
   margin: 0 auto;
